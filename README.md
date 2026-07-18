@@ -10,9 +10,9 @@
 
 | 指标 | 数量 |
 |------|------|
-| 收录项目总数 | 0 |
-| 覆盖领域分类 | 0 |
-| 覆盖用途分类 | 0 |
+| 收录项目总数 | 1 |
+| 覆盖领域分类 | 3 |
+| 覆盖用途分类 | 1 |
 | 最后更新 | 2026-07-18 |
 
 ---
@@ -21,7 +21,7 @@
 
 | 序号 | 收录日期 | 项目名 | 链接 | 技术栈 | 领域标签 | 用途标签 | 简介 |
 |------|----------|--------|------|--------|----------|----------|------|
-| - | - | - | - | - | - | - | 暂无收录项目 |
+| 1 | 2026-07-18 | token-monitor | [Javis603/token-monitor](https://github.com/Javis603/token-monitor) | Electron、Node.js、TypeScript | AI大模型、代码开发工具、桌面客户端 | AI工具资费监控 | 为AI编码工具打造的实时Token、成本与限额监控桌面组件，支持20+主流AI工具、多设备同步、多维统计视图、成本分析 |
 
 ---
 
@@ -29,29 +29,52 @@
 
 > 最新收录项目按时间倒序排列
 
-暂无收录项目
+### 2026-07-18
+- 📦 [token-monitor](https://github.com/Javis603/token-monitor)：AI工具Token/成本监控桌面组件，支持OpenClaw/Claude Code/Cursor等20+AI工具，多设备同步
 
 ---
 
 ## 🏷️ 标签检索区
 
 ### 领域标签
-暂无标签
+- #AI大模型
+- #代码开发工具
+- #桌面客户端
 
 ### 用途标签
-暂无标签
+- #AI工具资费监控
 
 ---
 
 ## 📂 按领域分类
 
-暂无分类项目，首次收录时自动创建对应领域区块
+### 🤖 AI大模型
+- [token-monitor](https://github.com/Javis603/token-monitor)：AI编码工具实时Token使用、成本、限额监控，支持多设备同步、多维统计
+  - 收录时间：2026-07-18
+  - 技术栈：Electron、Node.js
+  - 核心用途：AI工具资费监控
+
+### 💻 代码开发工具
+- [token-monitor](https://github.com/Javis603/token-monitor)：AI编码工具实时Token使用、成本、限额监控，支持多设备同步、多维统计
+  - 收录时间：2026-07-18
+  - 技术栈：Electron、Node.js
+  - 核心用途：AI工具资费监控
+
+### 🖥️ 桌面客户端
+- [token-monitor](https://github.com/Javis603/token-monitor)：AI编码工具实时Token使用、成本、限额监控，支持多设备同步、多维统计
+  - 收录时间：2026-07-18
+  - 技术栈：Electron、Node.js
+  - 核心用途：AI工具资费监控
 
 ---
 
 ## 🔧 按用途分类
 
-暂无分类项目，首次收录时自动创建对应用途区块
+### 💰 AI工具资费监控
+- [token-monitor](https://github.com/Javis603/token-monitor)：支持20+主流AI编码工具的Token消耗、成本统计、限额检测，多设备同步数据，可视化使用趋势
+  - 收录时间：2026-07-18
+  - 所属领域：AI大模型、代码开发工具、桌面客户端
+  - 技术栈：Electron、Node.js
 
 ---
 
