@@ -10,10 +10,10 @@
 
 | 指标 | 数量 |
 |------|------|
-| 收录项目总数 | 4 |
-| 覆盖领域分类 | 7 |
-| 覆盖用途分类 | 4 |
-| 最后更新 | 2026-08-24 |
+| 收录项目总数 | 5 |
+| 覆盖领域分类 | 8 |
+| 覆盖用途分类 | 5 |
+| 最后更新 | 2026-09-15 |
 
 ---
 
@@ -25,12 +25,16 @@
 | 2 | 2026-07-18 | VPSKnow | [vpsknow.com](https://vpsknow.com/) | 技术资源导航站点 | 运维监控、网络工具 | 技术资源导航 | 专业的全球云服务器与网络工具指南，提供VPS真实评测、网络教程、运维工具集合、全平台代理客户端下载 |
 | 3 | 2026-07-24 | headroom | [headroomlabs-ai/headroom](https://github.com/headroomlabs-ai/headroom) | Python、TypeScript、FastAPI | AI大模型、代码开发工具、Token优化 | Token压缩与上下文优化 | AI Agent上下文压缩层，对JSON数据节省60-95%token，支持Library/Proxy/MCP三种模式，⭐61.7K |
 | 4 | 2026-08-24 | openwiki | [langchain-ai/openwiki](https://github.com/langchain-ai/openwiki) | TypeScript、Python、JavaScript | 代码开发工具、AI大模型、文档生成 | 代码库文档生成、Agent文档维护 | LangChain官方的自维护Wiki CLI，为代码库/个人知识自动编写并持续更新的Markdown文档，供Agent作为记忆读取，支持13种模型与可视化，⭐15.6K |
+| 5 | 2026-09-15 | WeKnora | [Tencent/WeKnora](https://github.com/Tencent/WeKnora) | Go、Vue、TypeScript、Docker | 知识库管理、AI大模型、文档生成 | 知识库构建与RAG问答 | 腾讯开源的LLM知识管理框架，将散落文档转化为可查询RAG、可自主推理Agent与自维护Wiki三合一，支持IMA/飞书/GitLab/Notion等数据源同步与企业级多空间RBAC，⭐23.2K |
 
 ---
 
 ## 🕒 时间收录线（倒序）
 
 > 最新收录项目按时间倒序排列
+
+### 2026-09-15
+- 🧠 [WeKnora](https://github.com/Tencent/WeKnora)：腾讯开源的LLM知识管理框架，RAG问答 + ReAct Agent推理 + 自维护Wiki三合一，支持飞书/IMA/GitLab/Notion等数据源同步，⭐23.2K
 
 ### 2026-08-24
 - 📄 [openwiki](https://github.com/langchain-ai/openwiki)：LangChain官方的自维护Wiki CLI，为代码库自动编写与持续更新Agent文档，⭐15.6K，支持Codex/Claude Code集成与可视化
@@ -54,12 +58,14 @@
 - #运维监控
 - #网络工具
 - #文档生成
+- #知识库管理
 
 ### 用途标签
 - #AI工具资费监控
 - #Token压缩与上下文优化
 - #技术资源导航
 - #代码库文档生成
+- #知识库构建与RAG问答
 
 ---
 
@@ -78,6 +84,16 @@
   - 收录时间：2026-08-24
   - 技术栈：TypeScript、Python
   - 核心用途：代码库文档生成
+- [WeKnora](https://github.com/Tencent/WeKnora)：腾讯开源的LLM知识管理框架，RAG问答 + ReAct Agent推理 + 自维护Wiki三合一
+  - 收录时间：2026-09-15
+  - 技术栈：Go、Vue、TypeScript
+  - 核心用途：知识库构建与RAG问答
+
+### 🧠 知识库管理
+- [WeKnora](https://github.com/Tencent/WeKnora)：企业级 LLM 知识管理框架，把散落文档沉淀为可查询、可推理、可自我演进的知识资产，⭐23.2K
+  - 收录时间：2026-09-15
+  - 技术栈：Go、Vue、TypeScript、Docker
+  - 核心用途：知识库构建与RAG问答
 
 ### 💻 代码开发工具
 - [headroom](https://github.com/headroomlabs-ai/headroom)：AI Agent上下文压缩层，JSON数据节省60-95%token，⭐61.7K
@@ -98,6 +114,10 @@
   - 收录时间：2026-08-24
   - 技术栈：TypeScript、Python
   - 核心用途：代码库文档生成
+- [WeKnora](https://github.com/Tencent/WeKnora)：Agent 从原始文档自治生成相互链接的 Markdown Wiki 与可视化知识图谱，支持页面版本历史、行级 diff 与一键回滚
+  - 收录时间：2026-09-15
+  - 技术栈：Go、Vue
+  - 核心用途：知识库构建与RAG问答
 
 ### 🖥️ 桌面客户端
 - [token-monitor](https://github.com/Javis603/token-monitor)：AI编码工具实时Token使用、成本、限额监控，支持多设备同步、多维统计
@@ -126,6 +146,12 @@
 ---
 
 ## 🔧 按用途分类
+
+### 🔍 知识库构建与RAG问答
+- [WeKnora](https://github.com/Tencent/WeKnora)：RAG 快速问答 + ReAct Agent 多步推理 + Wiki 自治生成；支持飞书/IMA/GitLab/Notion 等 8 类数据源同步、9 种 IM 集成、7 种向量库、20+ 模型厂商，企业级多空间 RBAC 与 Langfuse 全链路可观测
+  - 收录时间：2026-09-15
+  - 所属领域：知识库管理、AI大模型、文档生成
+  - 技术栈：Go、Vue、TypeScript
 
 ### 📖 代码库文档生成
 - [openwiki](https://github.com/langchain-ai/openwiki)：扫描代码库，用Agent自动编写、维护Markdown文档，随代码变更持续更新，支持可视化
