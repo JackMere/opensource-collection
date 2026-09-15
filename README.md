@@ -10,9 +10,9 @@
 
 | 指标 | 数量 |
 |------|------|
-| 收录项目总数 | 5 |
-| 覆盖领域分类 | 8 |
-| 覆盖用途分类 | 5 |
+| 收录项目总数 | 6 |
+| 覆盖领域分类 | 9 |
+| 覆盖用途分类 | 6 |
 | 最后更新 | 2026-09-15 |
 
 ---
@@ -26,6 +26,7 @@
 | 3 | 2026-07-24 | headroom | [headroomlabs-ai/headroom](https://github.com/headroomlabs-ai/headroom) | Python、TypeScript、FastAPI | AI大模型、代码开发工具、Token优化 | Token压缩与上下文优化 | AI Agent上下文压缩层，对JSON数据节省60-95%token，支持Library/Proxy/MCP三种模式，⭐61.7K |
 | 4 | 2026-08-24 | openwiki | [langchain-ai/openwiki](https://github.com/langchain-ai/openwiki) | TypeScript、Python、JavaScript | 代码开发工具、AI大模型、文档生成 | 代码库文档生成、Agent文档维护 | LangChain官方的自维护Wiki CLI，为代码库/个人知识自动编写并持续更新的Markdown文档，供Agent作为记忆读取，支持13种模型与可视化，⭐15.6K |
 | 5 | 2026-09-15 | WeKnora | [Tencent/WeKnora](https://github.com/Tencent/WeKnora) | Go、Vue、TypeScript、Docker | 知识库管理、AI大模型、文档生成 | 知识库构建与RAG问答 | 腾讯开源的LLM知识管理框架，将散落文档转化为可查询RAG、可自主推理Agent与自维护Wiki三合一，支持IMA/飞书/GitLab/Notion等数据源同步与企业级多空间RBAC，⭐23.2K |
+| 6 | 2026-09-15 | The AI-Native SDLC Playbook | [claude.com/blog/the-ai-native-sdlc-playbook](https://claude.com/blog/the-ai-native-sdlc-playbook) | 技术文章（Anthropic 官方博客） | AI工程实践 | AI研发流程改造 | Anthropic 官方的 AI 原生软件开发生命周期手册，提出「代码不再是瓶颈、SDLC 才是」的核心论断，给出 6 阶段 16 个 play 的完整落地框架与治理机制 |
 
 ---
 
@@ -35,6 +36,7 @@
 
 ### 2026-09-15
 - 🧠 [WeKnora](https://github.com/Tencent/WeKnora)：腾讯开源的LLM知识管理框架，RAG问答 + ReAct Agent推理 + 自维护Wiki三合一，支持飞书/IMA/GitLab/Notion等数据源同步，⭐23.2K
+- 📘 [The AI-Native SDLC Playbook](https://claude.com/blog/the-ai-native-sdlc-playbook)：Anthropic 官方的 AI 原生软件开发生命周期手册，6 阶段 16 个 play，含 intent.md 产物链、Skills/Hooks 治理与自动闭环机制
 
 ### 2026-08-24
 - 📄 [openwiki](https://github.com/langchain-ai/openwiki)：LangChain官方的自维护Wiki CLI，为代码库自动编写与持续更新Agent文档，⭐15.6K，支持Codex/Claude Code集成与可视化
@@ -59,6 +61,7 @@
 - #网络工具
 - #文档生成
 - #知识库管理
+- #AI工程实践
 
 ### 用途标签
 - #AI工具资费监控
@@ -66,10 +69,17 @@
 - #技术资源导航
 - #代码库文档生成
 - #知识库构建与RAG问答
+- #AI研发流程改造
 
 ---
 
 ## 📂 按领域分类
+
+### 🏗️ AI工程实践
+- [The AI-Native SDLC Playbook](https://claude.com/blog/the-ai-native-sdlc-playbook)：Anthropic 官方方法论手册，论证「代码不再是瓶颈，SDLC 才是」，给出六阶段 16 个 play 的改造框架
+  - 收录时间：2026-09-15
+  - 类型：技术文章（官方博客）
+  - 核心用途：AI研发流程改造
 
 ### 🤖 AI大模型
 - [headroom](https://github.com/headroomlabs-ai/headroom)：AI Agent上下文压缩层，JSON数据节省60-95%token，⭐61.7K
@@ -146,6 +156,12 @@
 ---
 
 ## 🔧 按用途分类
+
+### 🔄 AI研发流程改造
+- [The AI-Native SDLC Playbook](https://claude.com/blog/the-ai-native-sdlc-playbook)：把评审从「逐行审 diff」前移到「审意图」；以 intent.md→spec.md→plan.md→PR→事故记录 的产物链作为审计链；Skills 作建议性控制 + Hooks 作确定性闸门；CI 持续 evals 回归测试 agent 配置；控制带突破自动写回新 intent.md 形成闭环
+  - 收录时间：2026-09-15
+  - 所属领域：AI工程实践
+  - 类型：技术文章（官方博客）
 
 ### 🔍 知识库构建与RAG问答
 - [WeKnora](https://github.com/Tencent/WeKnora)：RAG 快速问答 + ReAct Agent 多步推理 + Wiki 自治生成；支持飞书/IMA/GitLab/Notion 等 8 类数据源同步、9 种 IM 集成、7 种向量库、20+ 模型厂商，企业级多空间 RBAC 与 Langfuse 全链路可观测
