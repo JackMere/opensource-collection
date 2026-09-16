@@ -10,10 +10,10 @@
 
 | 指标 | 数量 |
 |------|------|
-| 收录项目总数 | 6 |
-| 覆盖领域分类 | 9 |
-| 覆盖用途分类 | 6 |
-| 最后更新 | 2026-09-15 |
+| 收录项目总数 | 7 |
+| 覆盖领域分类 | 10 |
+| 覆盖用途分类 | 7 |
+| 最后更新 | 2026-09-17 |
 
 ---
 
@@ -27,12 +27,16 @@
 | 4 | 2026-08-24 | openwiki | [langchain-ai/openwiki](https://github.com/langchain-ai/openwiki) | TypeScript、Python、JavaScript | 代码开发工具、AI大模型、文档生成 | 代码库文档生成、Agent文档维护 | LangChain官方的自维护Wiki CLI，为代码库/个人知识自动编写并持续更新的Markdown文档，供Agent作为记忆读取，支持13种模型与可视化，⭐15.6K |
 | 5 | 2026-09-15 | WeKnora | [Tencent/WeKnora](https://github.com/Tencent/WeKnora) | Go、Vue、TypeScript、Docker | 知识库管理、AI大模型、文档生成 | 知识库构建与RAG问答 | 腾讯开源的LLM知识管理框架，将散落文档转化为可查询RAG、可自主推理Agent与自维护Wiki三合一，支持IMA/飞书/GitLab/Notion等数据源同步与企业级多空间RBAC，⭐23.2K |
 | 6 | 2026-09-15 | The AI-Native SDLC Playbook | [claude.com/blog/the-ai-native-sdlc-playbook](https://claude.com/blog/the-ai-native-sdlc-playbook) | 技术文章（Anthropic 官方博客） | AI工程实践 | AI研发流程改造 | Anthropic 官方的 AI 原生软件开发生命周期手册，提出「代码不再是瓶颈、SDLC 才是」的核心论断，给出 6 阶段 16 个 play 的完整落地框架与治理机制 |
+| 7 | 2026-09-17 | taste-skill | [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) | JavaScript、Shell | 前端设计、代码开发工具、AI工程实践 | 前端界面生成提质 | 给 AI 加「审美」的反模板化前端技能集（13 个技能），以三旋钮配置 + 156 条 AI 味禁令 + 机械可验的前置检查，阻止 AI 生成千篇一律的界面，⭐87.7K |
 
 ---
 
 ## 🕒 时间收录线（倒序）
 
 > 最新收录项目按时间倒序排列
+
+### 2026-09-17
+- 🎨 [taste-skill](https://github.com/Leonxlnx/taste-skill)：给 AI 加「审美」的反模板化前端技能集，13 个技能覆盖落地页/作品集/改版，含三旋钮配置与硬性前置检查，⭐87.7K
 
 ### 2026-09-15
 - 🧠 [WeKnora](https://github.com/Tencent/WeKnora)：腾讯开源的LLM知识管理框架，RAG问答 + ReAct Agent推理 + 自维护Wiki三合一，支持飞书/IMA/GitLab/Notion等数据源同步，⭐23.2K
@@ -62,6 +66,7 @@
 - #文档生成
 - #知识库管理
 - #AI工程实践
+- #前端设计
 
 ### 用途标签
 - #AI工具资费监控
@@ -70,16 +75,27 @@
 - #代码库文档生成
 - #知识库构建与RAG问答
 - #AI研发流程改造
+- #前端界面生成提质
 
 ---
 
 ## 📂 按领域分类
+
+### 🎨 前端设计
+- [taste-skill](https://github.com/Leonxlnx/taste-skill)：反模板化前端技能集，先用「设计读解」推断方向，再以变化度/动效/密度三旋钮配置生成落地页与作品集
+  - 收录时间：2026-09-17
+  - 技术栈：JavaScript、Shell（React / Next.js / Tailwind v4）
+  - 核心用途：前端界面生成提质
 
 ### 🏗️ AI工程实践
 - [The AI-Native SDLC Playbook](https://claude.com/blog/the-ai-native-sdlc-playbook)：Anthropic 官方方法论手册，论证「代码不再是瓶颈，SDLC 才是」，给出六阶段 16 个 play 的改造框架
   - 收录时间：2026-09-15
   - 类型：技术文章（官方博客）
   - 核心用途：AI研发流程改造
+- [taste-skill](https://github.com/Leonxlnx/taste-skill)：Agent 技能工程化的范本——Brief 读解 → 三旋钮配置 → 机械可验的前置检查（156 条硬性禁令），并附原创的「大模型输出截断」实证研究
+  - 收录时间：2026-09-17
+  - 技术栈：JavaScript、Shell
+  - 核心用途：前端界面生成提质
 
 ### 🤖 AI大模型
 - [headroom](https://github.com/headroomlabs-ai/headroom)：AI Agent上下文压缩层，JSON数据节省60-95%token，⭐61.7K
@@ -118,6 +134,10 @@
   - 收录时间：2026-08-24
   - 技术栈：TypeScript、Python
   - 核心用途：代码库文档生成
+- [taste-skill](https://github.com/Leonxlnx/taste-skill)：前端开发技能集，约束 AI 生成界面的排版、间距、动效与信息密度，避免模板化产物
+  - 收录时间：2026-09-17
+  - 技术栈：JavaScript、React、Next.js、Tailwind v4
+  - 核心用途：前端界面生成提质
 
 ### 📄 文档生成
 - [openwiki](https://github.com/langchain-ai/openwiki)：LangChain官方CLI，自动为代码库/个人知识编写并持续更新Markdown Wiki，含可视化器
@@ -156,6 +176,12 @@
 ---
 
 ## 🔧 按用途分类
+
+### 🎨 前端界面生成提质
+- [taste-skill](https://github.com/Leonxlnx/taste-skill)：三大机制——①「设计读解」先读需求（页面类型/氛围词/参考物/受众/约束）再动手；②变化度/动效强度/信息密度三旋钮按场景自动配置（含政府服务、高端消费品、创意代理商等 9 类预设）；③机械可验的前置检查（如眉标数量 ≤ 章节数/3、CTA 意图不可重复、Z 字布局最多连续 2 段），并显式排除仪表盘/数据表格/多步表单等场景
+  - 收录时间：2026-09-17
+  - 所属领域：前端设计、代码开发工具、AI工程实践
+  - 技术栈：JavaScript、React、Next.js、Tailwind v4
 
 ### 🔄 AI研发流程改造
 - [The AI-Native SDLC Playbook](https://claude.com/blog/the-ai-native-sdlc-playbook)：把评审从「逐行审 diff」前移到「审意图」；以 intent.md→spec.md→plan.md→PR→事故记录 的产物链作为审计链；Skills 作建议性控制 + Hooks 作确定性闸门；CI 持续 evals 回归测试 agent 配置；控制带突破自动写回新 intent.md 形成闭环
