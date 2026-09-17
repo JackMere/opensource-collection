@@ -10,9 +10,9 @@
 
 | 指标 | 数量 |
 |------|------|
-| 收录项目总数 | 8 |
-| 覆盖领域分类 | 10 |
-| 覆盖用途分类 | 8 |
+| 收录项目总数 | 9 |
+| 覆盖领域分类 | 11 |
+| 覆盖用途分类 | 9 |
 | 最后更新 | 2026-09-17 |
 
 ---
@@ -29,6 +29,7 @@
 | 6 | 2026-09-15 | The AI-Native SDLC Playbook | [claude.com/blog/the-ai-native-sdlc-playbook](https://claude.com/blog/the-ai-native-sdlc-playbook) | 技术文章（Anthropic 官方博客） | AI工程实践 | AI研发流程改造 | Anthropic 官方的 AI 原生软件开发生命周期手册，提出「代码不再是瓶颈、SDLC 才是」的核心论断，给出 6 阶段 16 个 play 的完整落地框架与治理机制 |
 | 7 | 2026-09-17 | taste-skill | [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) | JavaScript、Shell | 前端设计、代码开发工具、AI工程实践 | 前端界面生成提质 | 给 AI 加「审美」的反模板化前端技能集（13 个技能），以三旋钮配置 + 156 条 AI 味禁令 + 机械可验的前置检查，阻止 AI 生成千篇一律的界面，⭐87.7K |
 | 8 | 2026-09-17 | Dayflow | [JerryZLiu/Dayflow](https://github.com/JerryZLiu/Dayflow) | Swift、SwiftUI | 桌面客户端、AI大模型 | 工作日志与时间追踪 | Mac 上的自动工作日志：每 10 秒采集一帧、以 15 分钟为批合成压缩视频交 AI 分析，产出当天时间线、站会稿与周度复盘，支持本地模型零成本运行，⭐7.1K |
+| 9 | 2026-09-17 | WeChat EXP | [sunhanaix/pc_wechat_exp](https://github.com/sunhanaix/pc_wechat_exp) | Python、Flask、SQLCipher、Vanilla JS、ECharts | 桌面客户端、数据提取与分析 | 聊天记录备份与分析 | Windows 平台微信 4.x 聊天记录备份/解密/查看/分析一体化工具，从进程内存提取 SQLCipher 密钥、逆向 V2 图片加密格式，配 Flask 网页界面与本地 Whisper 语音转文字，⭐439（⚠️ 无开源许可证） |
 
 ---
 
@@ -39,6 +40,7 @@
 ### 2026-09-17
 - 📓 [Dayflow](https://github.com/JerryZLiu/Dayflow)：Mac 自动工作日志，静默采集屏幕活动并由 AI 还原成时间线，支持本地模型完全离线运行，⭐7.1K
 - 🎨 [taste-skill](https://github.com/Leonxlnx/taste-skill)：给 AI 加「审美」的反模板化前端技能集，13 个技能覆盖落地页/作品集/改版，含三旋钮配置与硬性前置检查，⭐87.7K
+- 💬 [WeChat EXP](https://github.com/sunhanaix/pc_wechat_exp)：Windows 微信 4.x 聊天记录备份与分析工具，内存提密钥 + V2 图片解密 + Flask 网页查看器，⚠️ 无许可证，⭐439
 
 ### 2026-09-15
 - 🧠 [WeKnora](https://github.com/Tencent/WeKnora)：腾讯开源的LLM知识管理框架，RAG问答 + ReAct Agent推理 + 自维护Wiki三合一，支持飞书/IMA/GitLab/Notion等数据源同步，⭐23.2K
@@ -69,6 +71,7 @@
 - #知识库管理
 - #AI工程实践
 - #前端设计
+- #数据提取与分析
 
 ### 用途标签
 - #AI工具资费监控
@@ -79,10 +82,17 @@
 - #AI研发流程改造
 - #前端界面生成提质
 - #工作日志与时间追踪
+- #聊天记录备份与分析
 
 ---
 
 ## 📂 按领域分类
+
+### 🔐 数据提取与分析
+- [WeChat EXP](https://github.com/sunhanaix/pc_wechat_exp)：把加密数据库与专有图片格式逆向提取为可读数据的完整工程范例——SQLCipher 密钥内存提取、V2 图片格式逆向、四段式备份管线 + Flask 本地查看器
+  - 收录时间：2026-09-17
+  - 技术栈：Python、Flask、SQLCipher、Vanilla JS、ECharts
+  - 核心用途：聊天记录备份与分析
 
 ### 🎨 前端设计
 - [taste-skill](https://github.com/Leonxlnx/taste-skill)：反模板化前端技能集，先用「设计读解」推断方向，再以变化度/动效/密度三旋钮配置生成落地页与作品集
@@ -157,6 +167,10 @@
   - 核心用途：知识库构建与RAG问答
 
 ### 🖥️ 桌面客户端
+- [WeChat EXP](https://github.com/sunhanaix/pc_wechat_exp)：Windows 平台微信 4.x 聊天记录备份、解密、查看与分析一体化工具。双击 exe 即用（PyInstaller 打包），Flask 提供本机网页界面。技术上最硬的部分是加密层：从微信进程内存提取 SQLCipher 4 数据库密钥（4.1.10+ 走只读 Config.Cipher 扫描，无需管理员权限、无需重启微信），并完整逆向出 V2 图片格式（6 字节签名 + AES-128-ECB 数据 + 16 字节常量尾 + 0xC9 XOR 尾），以三种策略收割逐图密钥
+  - 收录时间：2026-09-17
+  - 技术栈：Python、Flask、SQLCipher、Vanilla JS、ECharts
+  - 核心用途：聊天记录备份与分析
 - [Dayflow](https://github.com/JerryZLiu/Dayflow)：macOS 原生（SwiftUI）自动工作日志，静默采集屏幕活动 + AI 还原为当天时间线，MIT 开源、本地优先
   - 收录时间：2026-09-17
   - 技术栈：Swift、SwiftUI
@@ -187,6 +201,12 @@
 ---
 
 ## 🔧 按用途分类
+
+### 💬 聊天记录备份与分析
+- [WeChat EXP](https://github.com/sunhanaix/pc_wechat_exp)：本地聊天记录备份与分析的完整工程链路——①**提取与解密**：扫描微信进程内存取 SQLCipher 4 密钥（4.1.10+ 为只读 Config.Cipher 扫描，免管理员/免重启/不受密钥窗口期限制），AES-256-CBC 解密；V2 图片密钥用三策略收割（V2 头邻近扫描 / wx_key 模式定位 / 全内存正则），局限是仅能获取微信当前已加载到内存的图片密钥；②**查看与分析**：Flask + Vanilla JS SPA 查看器（头像三级加载、名称五级解析、全消息类型渲染、SSE 进度）、词云、Spotify Wrapped 风格年度报告、ECharts 综合报告、本地 Whisper 语音转文字；③**备份管线**：scanner → decryptor → migrator → indexer 四段式，支持硬链接增量备份与媒体清理。架构分层清晰（CLI / Web / Engine / Backup），Engine 不依赖 Flask，带 pytest 基建。⚠️ 仓库无 LICENSE（默认保留所有权利），数据提取类工具存在法律边界，仅供技术研究参考
+  - 收录时间：2026-09-17
+  - 所属领域：桌面客户端、数据提取与分析
+  - 技术栈：Python、Flask、SQLCipher、Vanilla JS、ECharts
 
 ### 📓 工作日志与时间追踪
 - [Dayflow](https://github.com/JerryZLiu/Dayflow)：三大机制值得留意——①**采集与压缩**：默认 10 秒采一帧（非 1fps），15 分钟为批，把 900 秒真实活动压成 90 秒 720p 视频（10 倍压缩）再交模型；②**空闲批次跳过模型**：批长达 12 分钟且 90% 采样处于空闲（≥60 秒无操作）时直接写空闲卡片，完全不走 LLM，可省 25~50% 花费；③**本地模型零成本**：内置 Qwen3-VL 4B / Qwen2.5-VL 3B 预设，配 Ollama/LM Studio 可完全离线运行。另提供站会稿生成、周度复盘、分心追踪与 Markdown 导出
