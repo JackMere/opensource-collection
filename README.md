@@ -10,9 +10,9 @@
 
 | 指标 | 数量 |
 |------|------|
-| 收录项目总数 | 7 |
+| 收录项目总数 | 8 |
 | 覆盖领域分类 | 10 |
-| 覆盖用途分类 | 7 |
+| 覆盖用途分类 | 8 |
 | 最后更新 | 2026-09-17 |
 
 ---
@@ -28,6 +28,7 @@
 | 5 | 2026-09-15 | WeKnora | [Tencent/WeKnora](https://github.com/Tencent/WeKnora) | Go、Vue、TypeScript、Docker | 知识库管理、AI大模型、文档生成 | 知识库构建与RAG问答 | 腾讯开源的LLM知识管理框架，将散落文档转化为可查询RAG、可自主推理Agent与自维护Wiki三合一，支持IMA/飞书/GitLab/Notion等数据源同步与企业级多空间RBAC，⭐23.2K |
 | 6 | 2026-09-15 | The AI-Native SDLC Playbook | [claude.com/blog/the-ai-native-sdlc-playbook](https://claude.com/blog/the-ai-native-sdlc-playbook) | 技术文章（Anthropic 官方博客） | AI工程实践 | AI研发流程改造 | Anthropic 官方的 AI 原生软件开发生命周期手册，提出「代码不再是瓶颈、SDLC 才是」的核心论断，给出 6 阶段 16 个 play 的完整落地框架与治理机制 |
 | 7 | 2026-09-17 | taste-skill | [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) | JavaScript、Shell | 前端设计、代码开发工具、AI工程实践 | 前端界面生成提质 | 给 AI 加「审美」的反模板化前端技能集（13 个技能），以三旋钮配置 + 156 条 AI 味禁令 + 机械可验的前置检查，阻止 AI 生成千篇一律的界面，⭐87.7K |
+| 8 | 2026-09-17 | Dayflow | [JerryZLiu/Dayflow](https://github.com/JerryZLiu/Dayflow) | Swift、SwiftUI | 桌面客户端、AI大模型 | 工作日志与时间追踪 | Mac 上的自动工作日志：每 10 秒采集一帧、以 15 分钟为批合成压缩视频交 AI 分析，产出当天时间线、站会稿与周度复盘，支持本地模型零成本运行，⭐7.1K |
 
 ---
 
@@ -36,6 +37,7 @@
 > 最新收录项目按时间倒序排列
 
 ### 2026-09-17
+- 📓 [Dayflow](https://github.com/JerryZLiu/Dayflow)：Mac 自动工作日志，静默采集屏幕活动并由 AI 还原成时间线，支持本地模型完全离线运行，⭐7.1K
 - 🎨 [taste-skill](https://github.com/Leonxlnx/taste-skill)：给 AI 加「审美」的反模板化前端技能集，13 个技能覆盖落地页/作品集/改版，含三旋钮配置与硬性前置检查，⭐87.7K
 
 ### 2026-09-15
@@ -76,6 +78,7 @@
 - #知识库构建与RAG问答
 - #AI研发流程改造
 - #前端界面生成提质
+- #工作日志与时间追踪
 
 ---
 
@@ -102,6 +105,10 @@
   - 收录时间：2026-07-24
   - 技术栈：Python、TypeScript、FastAPI
   - 核心用途：Token压缩与上下文优化
+- [Dayflow](https://github.com/JerryZLiu/Dayflow)：多模型可插拔的 Agent 应用范本——云端（Gemini/ChatGPT/Claude）与本地（Ollama/LM Studio + Qwen3-VL）自由切换，并以空闲批次跳过 LLM 的方式省算力
+  - 收录时间：2026-09-17
+  - 技术栈：Swift、SwiftUI
+  - 核心用途：工作日志与时间追踪
 - [token-monitor](https://github.com/Javis603/token-monitor)：AI编码工具实时Token使用、成本、限额监控，支持多设备同步、多维统计
   - 收录时间：2026-07-18
   - 技术栈：Electron、Node.js
@@ -150,6 +157,10 @@
   - 核心用途：知识库构建与RAG问答
 
 ### 🖥️ 桌面客户端
+- [Dayflow](https://github.com/JerryZLiu/Dayflow)：macOS 原生（SwiftUI）自动工作日志，静默采集屏幕活动 + AI 还原为当天时间线，MIT 开源、本地优先
+  - 收录时间：2026-09-17
+  - 技术栈：Swift、SwiftUI
+  - 核心用途：工作日志与时间追踪
 - [token-monitor](https://github.com/Javis603/token-monitor)：AI编码工具实时Token使用、成本、限额监控，支持多设备同步、多维统计
   - 收录时间：2026-07-18
   - 技术栈：Electron、Node.js
@@ -176,6 +187,12 @@
 ---
 
 ## 🔧 按用途分类
+
+### 📓 工作日志与时间追踪
+- [Dayflow](https://github.com/JerryZLiu/Dayflow)：三大机制值得留意——①**采集与压缩**：默认 10 秒采一帧（非 1fps），15 分钟为批，把 900 秒真实活动压成 90 秒 720p 视频（10 倍压缩）再交模型；②**空闲批次跳过模型**：批长达 12 分钟且 90% 采样处于空闲（≥60 秒无操作）时直接写空闲卡片，完全不走 LLM，可省 25~50% 花费；③**本地模型零成本**：内置 Qwen3-VL 4B / Qwen2.5-VL 3B 预设，配 Ollama/LM Studio 可完全离线运行。另提供站会稿生成、周度复盘、分心追踪与 Markdown 导出
+  - 收录时间：2026-09-17
+  - 所属领域：桌面客户端、AI大模型
+  - 技术栈：Swift、SwiftUI
 
 ### 🎨 前端界面生成提质
 - [taste-skill](https://github.com/Leonxlnx/taste-skill)：三大机制——①「设计读解」先读需求（页面类型/氛围词/参考物/受众/约束）再动手；②变化度/动效强度/信息密度三旋钮按场景自动配置（含政府服务、高端消费品、创意代理商等 9 类预设）；③机械可验的前置检查（如眉标数量 ≤ 章节数/3、CTA 意图不可重复、Z 字布局最多连续 2 段），并显式排除仪表盘/数据表格/多步表单等场景
