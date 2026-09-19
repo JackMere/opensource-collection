@@ -10,10 +10,10 @@
 
 | 指标 | 数量 |
 |------|------|
-| 收录项目总数 | 9 |
+| 收录项目总数 | 10 |
 | 覆盖领域分类 | 11 |
 | 覆盖用途分类 | 9 |
-| 最后更新 | 2026-09-17 |
+| 最后更新 | 2026-09-19 |
 
 ---
 
@@ -30,12 +30,16 @@
 | 7 | 2026-09-17 | taste-skill | [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) | JavaScript、Shell | 前端设计、代码开发工具、AI工程实践 | 前端界面生成提质 | 给 AI 加「审美」的反模板化前端技能集（13 个技能），以三旋钮配置 + 156 条 AI 味禁令 + 机械可验的前置检查，阻止 AI 生成千篇一律的界面，⭐87.7K |
 | 8 | 2026-09-17 | Dayflow | [JerryZLiu/Dayflow](https://github.com/JerryZLiu/Dayflow) | Swift、SwiftUI | 桌面客户端、AI大模型 | 工作日志与时间追踪 | Mac 上的自动工作日志：每 10 秒采集一帧、以 15 分钟为批合成压缩视频交 AI 分析，产出当天时间线、站会稿与周度复盘，支持本地模型零成本运行，⭐7.1K |
 | 9 | 2026-09-17 | WeChat EXP | [sunhanaix/pc_wechat_exp](https://github.com/sunhanaix/pc_wechat_exp) | Python、Flask、SQLCipher、Vanilla JS、ECharts | 桌面客户端、数据提取与分析 | 聊天记录备份与分析 | Windows 平台微信 4.x 聊天记录备份/解密/查看/分析一体化工具，从进程内存提取 SQLCipher 密钥、逆向 V2 图片加密格式，配 Flask 网页界面与本地 Whisper 语音转文字，⭐439（⚠️ 无开源许可证） |
+| 10 | 2026-09-19 | superpowers | [obra/superpowers](https://github.com/obra/superpowers) | Shell、JavaScript、Python | AI工程实践、代码开发工具 | AI研发流程改造 | 面向编码 Agent 的完整软件开发方法论：15 个可组合技能自动触发，把「先澄清需求→写方案→子 Agent 实施→TDD→代码复审→收尾」七步流程固化为强制规范，⭐288.6K |
 
 ---
 
 ## 🕒 时间收录线（倒序）
 
 > 最新收录项目按时间倒序排列
+
+### 2026-09-19
+- 🦸 [superpowers](https://github.com/obra/superpowers)：把「先问需求、再写方案、按 TDD 实施、每步自审」固化成一套自动触发的 Agent 技能——设计未确认不进入实施，⭐288.6K
 
 ### 2026-09-17
 - 📓 [Dayflow](https://github.com/JerryZLiu/Dayflow)：Mac 自动工作日志，静默采集屏幕活动并由 AI 还原成时间线，支持本地模型完全离线运行，⭐7.1K
@@ -101,6 +105,10 @@
   - 核心用途：前端界面生成提质
 
 ### 🏗️ AI工程实践
+- [superpowers](https://github.com/obra/superpowers)：面向编码 Agent 的软件开发方法论，由 15 个可组合技能 + 首轮注入的 bootstrap 组成。核心机制是**技能按上下文自动触发、无需显式调用**（README 原文：Mandatory workflows, not suggestions）。七步流程：①brainstorming 以苏格拉底式提问逼出真实需求，分块提交设计待确认；②using-git-worktrees 建隔离工作区、跑通项目初始化并确认测试基线干净；③writing-plans 拆成 **2–5 分钟一个**的任务，每任务给出精确文件路径、完整代码与验证步骤；④subagent-driven-development 每任务派新子 Agent 实施后做两阶段复审（先规格符合性、再代码质量），或 executing-plans 在当前会话内联执行、结尾统一复审（最省）；⑤test-driven-development 强制 RED-GREEN-REFACTOR，**并删除先于测试写下的代码**；⑥requesting-code-review 按严重度报告，关键问题阻断推进；⑦finishing-a-development-branch 验证测试后给出合并/PR/保留/丢弃选项并清理 worktree。四条设计哲学：TDD 优先、系统化优于临时应对、复杂度削减、**证据优于声明**。已适配 16 种编码 Agent（Claude Code、Codex、Cursor、Gemini CLI、Copilot CLI、OpenCode、Hermes Agent 等），各 harness 独立安装
+  - 收录时间：2026-09-19
+  - 技术栈：Shell、JavaScript、Python
+  - 核心用途：AI研发流程改造
 - [The AI-Native SDLC Playbook](https://claude.com/blog/the-ai-native-sdlc-playbook)：Anthropic 官方方法论手册，论证「代码不再是瓶颈，SDLC 才是」，给出六阶段 16 个 play 的改造框架
   - 收录时间：2026-09-15
   - 类型：技术文章（官方博客）
@@ -139,6 +147,10 @@
   - 核心用途：知识库构建与RAG问答
 
 ### 💻 代码开发工具
+- [superpowers](https://github.com/obra/superpowers)：面向编码 Agent 的软件开发方法论，由 15 个可组合技能 + 首轮注入的 bootstrap 组成。核心机制是**技能按上下文自动触发、无需显式调用**（README 原文：Mandatory workflows, not suggestions）。七步流程：①brainstorming 以苏格拉底式提问逼出真实需求，分块提交设计待确认；②using-git-worktrees 建隔离工作区、跑通项目初始化并确认测试基线干净；③writing-plans 拆成 **2–5 分钟一个**的任务，每任务给出精确文件路径、完整代码与验证步骤；④subagent-driven-development 每任务派新子 Agent 实施后做两阶段复审（先规格符合性、再代码质量），或 executing-plans 在当前会话内联执行、结尾统一复审（最省）；⑤test-driven-development 强制 RED-GREEN-REFACTOR，**并删除先于测试写下的代码**；⑥requesting-code-review 按严重度报告，关键问题阻断推进；⑦finishing-a-development-branch 验证测试后给出合并/PR/保留/丢弃选项并清理 worktree。四条设计哲学：TDD 优先、系统化优于临时应对、复杂度削减、**证据优于声明**。已适配 16 种编码 Agent（Claude Code、Codex、Cursor、Gemini CLI、Copilot CLI、OpenCode、Hermes Agent 等），各 harness 独立安装
+  - 收录时间：2026-09-19
+  - 技术栈：Shell、JavaScript、Python
+  - 核心用途：AI研发流程改造
 - [headroom](https://github.com/headroomlabs-ai/headroom)：AI Agent上下文压缩层，JSON数据节省60-95%token，⭐61.7K
   - 收录时间：2026-07-24
   - 技术栈：Python、TypeScript、FastAPI
@@ -221,6 +233,10 @@
   - 技术栈：JavaScript、React、Next.js、Tailwind v4
 
 ### 🔄 AI研发流程改造
+- [superpowers](https://github.com/obra/superpowers)：面向编码 Agent 的软件开发方法论，把「先澄清需求 → 写方案 → TDD 实施 → 逐步复审」固化为 15 个自动触发的技能，而非可选建议。七步：①brainstorming 用提问逼出真实需求、分块确认设计，**未澄清不写代码**；②using-git-worktrees 在隔离工作区起新分支并验证测试基线；③writing-plans 拆成 2–5 分钟粒度的任务（含精确文件路径、完整代码、验证步骤）；④subagent-driven-development 每任务派新子 Agent，实施后两阶段复审（规格符合性 → 代码质量），或 executing-plans 内联执行、结尾统一复审；⑤test-driven-development 强制 RED-GREEN-REFACTOR，**删除先于测试写的代码**；⑥requesting-code-review 按严重度报告，关键问题阻断进度；⑦finishing-a-development-branch 验证测试后给出合并/PR/保留/丢弃选项并清理 worktree。另含 dispatching-parallel-agents（并发子 Agent）、verification-before-completion（完工前验证）、diagnosing-superpowers（会话失败取证）等。⚠️ 对 Hermes 的已知限制：README 明示 Hermes 无 post-compaction 钩子，超长会话在首轮之后发生上下文压缩会丢失 bootstrap，需重开会话
+  - 收录时间：2026-09-19
+  - 所属领域：AI工程实践、代码开发工具
+  - 技术栈：Shell、JavaScript、Python
 - [The AI-Native SDLC Playbook](https://claude.com/blog/the-ai-native-sdlc-playbook)：把评审从「逐行审 diff」前移到「审意图」；以 intent.md→spec.md→plan.md→PR→事故记录 的产物链作为审计链；Skills 作建议性控制 + Hooks 作确定性闸门；CI 持续 evals 回归测试 agent 配置；控制带突破自动写回新 intent.md 形成闭环
   - 收录时间：2026-09-15
   - 所属领域：AI工程实践
