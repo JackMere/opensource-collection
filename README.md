@@ -10,10 +10,10 @@
 
 | 指标 | 数量 |
 |------|------|
-| 收录项目总数 | 10 |
+| 收录项目总数 | 11 |
 | 覆盖领域分类 | 11 |
 | 覆盖用途分类 | 9 |
-| 最后更新 | 2026-09-19 |
+| 最后更新 | 2026-09-21 |
 
 ---
 
@@ -31,12 +31,16 @@
 | 8 | 2026-09-17 | Dayflow | [JerryZLiu/Dayflow](https://github.com/JerryZLiu/Dayflow) | Swift、SwiftUI | 桌面客户端、AI大模型 | 工作日志与时间追踪 | Mac 上的自动工作日志：每 10 秒采集一帧、以 15 分钟为批合成压缩视频交 AI 分析，产出当天时间线、站会稿与周度复盘，支持本地模型零成本运行，⭐7.1K |
 | 9 | 2026-09-17 | WeChat EXP | [sunhanaix/pc_wechat_exp](https://github.com/sunhanaix/pc_wechat_exp) | Python、Flask、SQLCipher、Vanilla JS、ECharts | 桌面客户端、数据提取与分析 | 聊天记录备份与分析 | Windows 平台微信 4.x 聊天记录备份/解密/查看/分析一体化工具，从进程内存提取 SQLCipher 密钥、逆向 V2 图片加密格式，配 Flask 网页界面与本地 Whisper 语音转文字，⭐439（⚠️ 无开源许可证） |
 | 10 | 2026-09-19 | superpowers | [obra/superpowers](https://github.com/obra/superpowers) | Shell、JavaScript、Python | AI工程实践、代码开发工具 | AI研发流程改造 | 面向编码 Agent 的完整软件开发方法论：15 个可组合技能自动触发，把「先澄清需求→写方案→子 Agent 实施→TDD→代码复审→收尾」七步流程固化为强制规范，⭐288.6K |
+| 11 | 2026-09-21 | OpenCodeReview | [alibaba/open-code-review](https://github.com/alibaba/open-code-review) | Go、JavaScript、TypeScript、Kotlin | 代码开发工具、AI工程实践 | AI研发流程改造 | 阿里内部打磨两年后开源的 AI 代码评审 CLI：以「确定性工程 + Agent 混合架构」约束评审流程，解决通用 Agent 的覆盖不全、定位漂移、质量波动三大问题，实测同模型下精确率与 F1 更高、token 仅约 1/9，⭐38.4K |
 
 ---
 
 ## 🕒 时间收录线（倒序）
 
 > 最新收录项目按时间倒序排列
+
+### 2026-09-21
+- 🔍 [OpenCodeReview](https://github.com/alibaba/open-code-review)：阿里开源的生产级 AI 代码评审工具——用确定性工程兜住「必须不能错」的环节（选文件/打包/规则匹配/定位校正），只把动态判断交给 Agent；同模型下 token 仅通用 Agent 的 1/9，⭐38.4K
 
 ### 2026-09-19
 - 🦸 [superpowers](https://github.com/obra/superpowers)：把「先问需求、再写方案、按 TDD 实施、每步自审」固化成一套自动触发的 Agent 技能——设计未确认不进入实施，⭐288.6K
@@ -105,6 +109,10 @@
   - 核心用途：前端界面生成提质
 
 ### 🏗️ AI工程实践
+- [OpenCodeReview](https://github.com/alibaba/open-code-review)：阿里巴巴内部使用两年、服务数万名开发者、累计发现数百万代码缺陷后开源的 AI 代码评审 CLI（命令名 `ocr`，npm 包 `@alibaba-group/open-code-review`）。核心主张是「**确定性工程 × Agent 混合架构**」，即把事实分成两类：**必须不能错**的环节交给工程逻辑而非语言模型，**需要动态判断**的环节才交给 Agent。前者包括①精确文件选择（哪些文件该审、哪些该过滤，确保不漏关键改动）；②智能文件打包（把相关文件合成一个评审单元，如 `message_en.properties` 与 `message_zh.properties` 打包同审；每个包作为**隔离上下文的子 Agent** 运行，分治策略在超大改动集上依然稳定，天然支持并发评审）；③细粒度规则匹配（按文件特征匹配评审规则，用**模板引擎**而非自然语言驱动，比纯提示词更稳定可预测）；④**外置的定位与反思模块**（独立的评论定位模块与评论反思模块，系统性改善 AI 反馈的位置准确度与内容准确度）。后者即 Agent 侧：面向代码评审深度调优的提示词模板、以及从大规模生产数据**工具调用轨迹**中蒸馏出的专用工具集（含调用频次分布、每工具重复率、新增工具对整体调用链的影响分析）。实测对比：与同样底层模型的通用 Agent（Claude Code + Skills）相比，**精确率与 F1 显著更高，token 消耗仅约 1/9，评审更快**；召回率较低是**刻意取舍**（宁少报噪音，不多报误报）。提供自建基准 **AACR-Bench**——50 个热门开源仓库、200 个真实 PR、10 种语言，由 80+ 位资深工程师交叉校验，共 1,505 条标注真值（数据集已发布于 Hugging Face）。除 diff 评审外另有 `ocr scan` 做**全文件扫描**（用于审计无 diff 可依的陌生代码库）。内置多语言规则集覆盖 NPE、线程安全、XSS、SQL 注入等；兼容 OpenAI 与 Anthropic 协议；支持 MCP Server 扩展、OpenTelemetry 可观测、Session Viewer（浏览器回放评审会话、把评论标记为已修/忽略）、CI/CD 集成（GitHub Actions / GitLab CI / GitFlic CI / Gerrit）。已适配 Claude Code、Codex、Cursor、Kimi Code、OpenCode 等宿主 Agent，并提供**委派模式**（delegate，由宿主 Agent 用自带模型执行评审，OCR 只负责选文件与规则解析，无需配置 LLM Key）。Apache-2.0，Copyright 2026 Alibaba
+  - 收录时间：2026-09-21
+  - 技术栈：Go、JavaScript、TypeScript、Kotlin
+  - 核心用途：AI研发流程改造
 - [superpowers](https://github.com/obra/superpowers)：面向编码 Agent 的软件开发方法论，由 15 个可组合技能 + 首轮注入的 bootstrap 组成。核心机制是**技能按上下文自动触发、无需显式调用**（README 原文：Mandatory workflows, not suggestions）。七步流程：①brainstorming 以苏格拉底式提问逼出真实需求，分块提交设计待确认；②using-git-worktrees 建隔离工作区、跑通项目初始化并确认测试基线干净；③writing-plans 拆成 **2–5 分钟一个**的任务，每任务给出精确文件路径、完整代码与验证步骤；④subagent-driven-development 每任务派新子 Agent 实施后做两阶段复审（先规格符合性、再代码质量），或 executing-plans 在当前会话内联执行、结尾统一复审（最省）；⑤test-driven-development 强制 RED-GREEN-REFACTOR，**并删除先于测试写下的代码**；⑥requesting-code-review 按严重度报告，关键问题阻断推进；⑦finishing-a-development-branch 验证测试后给出合并/PR/保留/丢弃选项并清理 worktree。四条设计哲学：TDD 优先、系统化优于临时应对、复杂度削减、**证据优于声明**。已适配 16 种编码 Agent（Claude Code、Codex、Cursor、Gemini CLI、Copilot CLI、OpenCode、Hermes Agent 等），各 harness 独立安装
   - 收录时间：2026-09-19
   - 技术栈：Shell、JavaScript、Python
@@ -147,6 +155,10 @@
   - 核心用途：知识库构建与RAG问答
 
 ### 💻 代码开发工具
+- [OpenCodeReview](https://github.com/alibaba/open-code-review)：阿里巴巴内部使用两年、服务数万名开发者、累计发现数百万代码缺陷后开源的 AI 代码评审 CLI（命令名 `ocr`，npm 包 `@alibaba-group/open-code-review`）。核心主张是「**确定性工程 × Agent 混合架构**」，即把事实分成两类：**必须不能错**的环节交给工程逻辑而非语言模型，**需要动态判断**的环节才交给 Agent。前者包括①精确文件选择（哪些文件该审、哪些该过滤，确保不漏关键改动）；②智能文件打包（把相关文件合成一个评审单元，如 `message_en.properties` 与 `message_zh.properties` 打包同审；每个包作为**隔离上下文的子 Agent** 运行，分治策略在超大改动集上依然稳定，天然支持并发评审）；③细粒度规则匹配（按文件特征匹配评审规则，用**模板引擎**而非自然语言驱动，比纯提示词更稳定可预测）；④**外置的定位与反思模块**（独立的评论定位模块与评论反思模块，系统性改善 AI 反馈的位置准确度与内容准确度）。后者即 Agent 侧：面向代码评审深度调优的提示词模板、以及从大规模生产数据**工具调用轨迹**中蒸馏出的专用工具集（含调用频次分布、每工具重复率、新增工具对整体调用链的影响分析）。实测对比：与同样底层模型的通用 Agent（Claude Code + Skills）相比，**精确率与 F1 显著更高，token 消耗仅约 1/9，评审更快**；召回率较低是**刻意取舍**（宁少报噪音，不多报误报）。提供自建基准 **AACR-Bench**——50 个热门开源仓库、200 个真实 PR、10 种语言，由 80+ 位资深工程师交叉校验，共 1,505 条标注真值（数据集已发布于 Hugging Face）。除 diff 评审外另有 `ocr scan` 做**全文件扫描**（用于审计无 diff 可依的陌生代码库）。内置多语言规则集覆盖 NPE、线程安全、XSS、SQL 注入等；兼容 OpenAI 与 Anthropic 协议；支持 MCP Server 扩展、OpenTelemetry 可观测、Session Viewer（浏览器回放评审会话、把评论标记为已修/忽略）、CI/CD 集成（GitHub Actions / GitLab CI / GitFlic CI / Gerrit）。已适配 Claude Code、Codex、Cursor、Kimi Code、OpenCode 等宿主 Agent，并提供**委派模式**（delegate，由宿主 Agent 用自带模型执行评审，OCR 只负责选文件与规则解析，无需配置 LLM Key）。Apache-2.0，Copyright 2026 Alibaba
+  - 收录时间：2026-09-21
+  - 技术栈：Go、JavaScript、TypeScript、Kotlin
+  - 核心用途：AI研发流程改造
 - [superpowers](https://github.com/obra/superpowers)：面向编码 Agent 的软件开发方法论，由 15 个可组合技能 + 首轮注入的 bootstrap 组成。核心机制是**技能按上下文自动触发、无需显式调用**（README 原文：Mandatory workflows, not suggestions）。七步流程：①brainstorming 以苏格拉底式提问逼出真实需求，分块提交设计待确认；②using-git-worktrees 建隔离工作区、跑通项目初始化并确认测试基线干净；③writing-plans 拆成 **2–5 分钟一个**的任务，每任务给出精确文件路径、完整代码与验证步骤；④subagent-driven-development 每任务派新子 Agent 实施后做两阶段复审（先规格符合性、再代码质量），或 executing-plans 在当前会话内联执行、结尾统一复审（最省）；⑤test-driven-development 强制 RED-GREEN-REFACTOR，**并删除先于测试写下的代码**；⑥requesting-code-review 按严重度报告，关键问题阻断推进；⑦finishing-a-development-branch 验证测试后给出合并/PR/保留/丢弃选项并清理 worktree。四条设计哲学：TDD 优先、系统化优于临时应对、复杂度削减、**证据优于声明**。已适配 16 种编码 Agent（Claude Code、Codex、Cursor、Gemini CLI、Copilot CLI、OpenCode、Hermes Agent 等），各 harness 独立安装
   - 收录时间：2026-09-19
   - 技术栈：Shell、JavaScript、Python
@@ -233,6 +245,10 @@
   - 技术栈：JavaScript、React、Next.js、Tailwind v4
 
 ### 🔄 AI研发流程改造
+- [OpenCodeReview](https://github.com/alibaba/open-code-review)：把 AI 代码评审从「提示词驱动」升级为「**确定性工程 × Agent 混合架构**」，针对通用 Agent 做评审时暴露的三个痛点逐一设约束：①**覆盖不全**（改动集一大就「抄近路」，只审部分文件、漏掉其余）；②**定位漂移**（报告的问题与实际代码位置对不上，行号/文件引用偏靶）；③**质量不稳**（自然语言驱动的 Skill 难调试，提示词稍有差异质量即明显波动）——根因是纯语言驱动架构**对评审过程缺少硬约束**。解法是把「必须不能错」的环节交给工程逻辑而非模型：**精确文件选择**确保不漏关键改动；**智能文件打包**把相关文件合成一个评审单元（每包以**隔离上下文的子 Agent** 运行，分治 + 天然并发，在超大改动集上依然稳定）；**细粒度规则匹配**按文件特征匹配规则、模板引擎驱动优于自然语言指导；**外置的评论定位与反思模块**系统性改善位置与内容准确度。Agent 只保留真正擅长的动态决策与上下文检索，配面向评审调优的提示词与**从生产工具调用轨迹蒸馏的专用工具集**。实测（同底层模型，对比 Claude Code + Skills）：精确率与 F1 更高、**token 仅约 1/9**、更快；召回率略低属**刻意取舍**（偏精确、少噪音）。自带 **AACR-Bench** 基准（50 仓库 / 200 真实 PR / 10 语言 / 80+ 资深工程师交叉校验 / 1,505 条真值，数据集已公开于 Hugging Face）。用法：`ocr review`（工作区/分支区间/单次提交）、`ocr scan`（全文件扫描，无需 git 历史）、`ocr session list` + `--resume`（断点续评）、`--format json --output`（结构化输出，便于宿主 Agent 消费）、`ocr delegate preview|rule`（委派模式）。内置规则集覆盖 NPE、线程安全、XSS、SQL 注入；兼容 **OpenAI 与 Anthropic** 协议（可指向自建网关）；支持 MCP Server 扩展、OpenTelemetry 可观测、Session Viewer（浏览器回放会话、把评论标记为已修/忽略、可导出为自包含 HTML）、CI/CD（GitHub Actions / GitLab CI / GitFlic CI / Gerrit）。已适配 Claude Code、Codex、Cursor、Kimi Code、OpenCode 等宿主 Agent。要求 Git ≥ 2.41，支持 Windows / macOS / Linux。Apache-2.0，OpenSSF Best Practices **Gold**
+  - 收录时间：2026-09-21
+  - 所属领域：代码开发工具、AI工程实践
+  - 技术栈：Go、JavaScript、TypeScript、Kotlin
 - [superpowers](https://github.com/obra/superpowers)：面向编码 Agent 的软件开发方法论，把「先澄清需求 → 写方案 → TDD 实施 → 逐步复审」固化为 15 个自动触发的技能，而非可选建议。七步：①brainstorming 用提问逼出真实需求、分块确认设计，**未澄清不写代码**；②using-git-worktrees 在隔离工作区起新分支并验证测试基线；③writing-plans 拆成 2–5 分钟粒度的任务（含精确文件路径、完整代码、验证步骤）；④subagent-driven-development 每任务派新子 Agent，实施后两阶段复审（规格符合性 → 代码质量），或 executing-plans 内联执行、结尾统一复审；⑤test-driven-development 强制 RED-GREEN-REFACTOR，**删除先于测试写的代码**；⑥requesting-code-review 按严重度报告，关键问题阻断进度；⑦finishing-a-development-branch 验证测试后给出合并/PR/保留/丢弃选项并清理 worktree。另含 dispatching-parallel-agents（并发子 Agent）、verification-before-completion（完工前验证）、diagnosing-superpowers（会话失败取证）等。⚠️ 对 Hermes 的已知限制：README 明示 Hermes 无 post-compaction 钩子，超长会话在首轮之后发生上下文压缩会丢失 bootstrap，需重开会话
   - 收录时间：2026-09-19
   - 所属领域：AI工程实践、代码开发工具
