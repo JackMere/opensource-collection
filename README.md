@@ -10,10 +10,10 @@
 
 | 指标 | 数量 |
 |------|------|
-| 收录项目总数 | 11 |
+| 收录项目总数 | 12 |
 | 覆盖领域分类 | 11 |
-| 覆盖用途分类 | 9 |
-| 最后更新 | 2026-09-21 |
+| 覆盖用途分类 | 10 |
+| 最后更新 | 2026-09-23 |
 
 ---
 
@@ -32,12 +32,16 @@
 | 9 | 2026-09-17 | WeChat EXP | [sunhanaix/pc_wechat_exp](https://github.com/sunhanaix/pc_wechat_exp) | Python、Flask、SQLCipher、Vanilla JS、ECharts | 桌面客户端、数据提取与分析 | 聊天记录备份与分析 | Windows 平台微信 4.x 聊天记录备份/解密/查看/分析一体化工具，从进程内存提取 SQLCipher 密钥、逆向 V2 图片加密格式，配 Flask 网页界面与本地 Whisper 语音转文字，⭐439（⚠️ 无开源许可证） |
 | 10 | 2026-09-19 | superpowers | [obra/superpowers](https://github.com/obra/superpowers) | Shell、JavaScript、Python | AI工程实践、代码开发工具 | AI研发流程改造 | 面向编码 Agent 的完整软件开发方法论：15 个可组合技能自动触发，把「先澄清需求→写方案→子 Agent 实施→TDD→代码复审→收尾」七步流程固化为强制规范，⭐288.6K |
 | 11 | 2026-09-21 | OpenCodeReview | [alibaba/open-code-review](https://github.com/alibaba/open-code-review) | Go、JavaScript、TypeScript、Kotlin | 代码开发工具、AI工程实践 | AI研发流程改造 | 阿里内部打磨两年后开源的 AI 代码评审 CLI：以「确定性工程 + Agent 混合架构」约束评审流程，解决通用 Agent 的覆盖不全、定位漂移、质量波动三大问题，实测同模型下精确率与 F1 更高、token 仅约 1/9，⭐38.4K |
+| 12 | 2026-09-23 | Archify | [tt-a1i/archify](https://github.com/tt-a1i/archify) | JavaScript、HTML、CSS | 文档生成、AI工程实践 | 架构与流程可视化 | 面向编码 Agent 的架构可视化技能：把描述或代码库变成架构/工作流/时序/数据流/生命周期五类图，输出可交互的单文件 HTML，以「类型化 JSON IR + 五类原子校验 + 可修复回执」保证图表可验证，⭐70.3K |
 
 ---
 
 ## 🕒 时间收录线（倒序）
 
 > 最新收录项目按时间倒序排列
+
+### 2026-09-23
+- 📐 [Archify](https://github.com/tt-a1i/archify)：把描述或代码库变成可交互的架构/流程/时序图，单文件 HTML 转发即带走交互；靠类型化 JSON IR、原子校验与「只画已授权事实」守住图表真实性，⭐70.3K
 
 ### 2026-09-21
 - 🔍 [OpenCodeReview](https://github.com/alibaba/open-code-review)：阿里开源的生产级 AI 代码评审工具——用确定性工程兜住「必须不能错」的环节（选文件/打包/规则匹配/定位校正），只把动态判断交给 Agent；同模型下 token 仅通用 Agent 的 1/9，⭐38.4K
@@ -91,6 +95,7 @@
 - #前端界面生成提质
 - #工作日志与时间追踪
 - #聊天记录备份与分析
+- #架构与流程可视化
 
 ---
 
@@ -109,6 +114,10 @@
   - 核心用途：前端界面生成提质
 
 ### 🏗️ AI工程实践
+- [Archify](https://github.com/tt-a1i/archify)：把「你想理解、规划或分享的东西」变成可交互的视觉图——面向编码 Agent 的技能（Skill），支持**架构图、工作流图、时序图、数据流图、生命周期图**五种类型，输入可以是一句描述，也可以是一个真实代码库。核心工程主张是**「先类型化、再渲染」**：①Agent 生成**类型化 JSON IR**（五种图形各有独立 schema）；②**原子化校验**——schema、布局、HTML/SVG、路由、标签与路径避让五类检查全部通过，候选产物才会替换上一个已验证版本；③失败返回**可修复回执**（`validate --json` / `deliver --json` 输出稳定规则码、精确主体、实测证据与受支持的修复项，而非 Node 堆栈），修正轮次限定两轮；④**last-good 实时预览**——可选桌面模式（仅监听 127.0.0.1 随机端口）监视单个 JSON，只有通过全部闸门的修订才刷新，写坏时保留上一版可用图；⑤**布局由判断力而非通用算法决定**——Agent 决定层级、间距、路径与强调，共享的自动端点确定性展开以免箭头堆在一个中点。产物是**单文件自包含 HTML**：无需安装即可在浏览器打开，带节点聚焦、上下游可达、精确路径、角色对比（Lens）、全图雷达（Map）、分章讲解（Story）与演示舞台（Presentation），并支持可分享链接状态还原（`#focus=` / `#route=` / `#lens=` / `#view=`）与 PNG / 动图 / **1200×630 分享卡**导出（动效有限、尊重 prefers-reduced-motion、永不进入正式导出）。真实性有两条硬约束：交互**只复用「已授权（authored）」的节点与关系**，不臆造拓扑、不声称运行时影响；需要举证时架构节点标 `SRC n` 并打开**锚定到某一公开 commit 的 Git 已验证文件与行号**。另有 **Architecture Delta**：对比 Before/Delta/After 三份已验证快照用于设计或 PR 评审，只呈现已授权事实的增删改移，**明确不推断**影响面、风险或合并安全性。已适配 Cursor、Claude Code、Codex CLI、opencode 等宿主 Agent（`npx skills add tt-a1i/archify -g`），另有 Claude.ai / Project Knowledge / DeepSeek Harness 社区集成；i18n 支持 `meta.locale=en|zh-CN`。隐私极简：更新检查仅 GET 固定 manifest 提醒，不发版本/Agent/项目数据/提示词/设备 ID，可用 `ARCHIFY_UPDATE_CHECK_DISABLED=1` 关闭。**明确不在范围内**：自动解析 Mermaid、通用自动布局、托管分享、所见即所得编辑。MIT
+  - 收录时间：2026-09-23
+  - 技术栈：JavaScript、HTML、CSS
+  - 核心用途：架构与流程可视化
 - [OpenCodeReview](https://github.com/alibaba/open-code-review)：阿里巴巴内部使用两年、服务数万名开发者、累计发现数百万代码缺陷后开源的 AI 代码评审 CLI（命令名 `ocr`，npm 包 `@alibaba-group/open-code-review`）。核心主张是「**确定性工程 × Agent 混合架构**」，即把事实分成两类：**必须不能错**的环节交给工程逻辑而非语言模型，**需要动态判断**的环节才交给 Agent。前者包括①精确文件选择（哪些文件该审、哪些该过滤，确保不漏关键改动）；②智能文件打包（把相关文件合成一个评审单元，如 `message_en.properties` 与 `message_zh.properties` 打包同审；每个包作为**隔离上下文的子 Agent** 运行，分治策略在超大改动集上依然稳定，天然支持并发评审）；③细粒度规则匹配（按文件特征匹配评审规则，用**模板引擎**而非自然语言驱动，比纯提示词更稳定可预测）；④**外置的定位与反思模块**（独立的评论定位模块与评论反思模块，系统性改善 AI 反馈的位置准确度与内容准确度）。后者即 Agent 侧：面向代码评审深度调优的提示词模板、以及从大规模生产数据**工具调用轨迹**中蒸馏出的专用工具集（含调用频次分布、每工具重复率、新增工具对整体调用链的影响分析）。实测对比：与同样底层模型的通用 Agent（Claude Code + Skills）相比，**精确率与 F1 显著更高，token 消耗仅约 1/9，评审更快**；召回率较低是**刻意取舍**（宁少报噪音，不多报误报）。提供自建基准 **AACR-Bench**——50 个热门开源仓库、200 个真实 PR、10 种语言，由 80+ 位资深工程师交叉校验，共 1,505 条标注真值（数据集已发布于 Hugging Face）。除 diff 评审外另有 `ocr scan` 做**全文件扫描**（用于审计无 diff 可依的陌生代码库）。内置多语言规则集覆盖 NPE、线程安全、XSS、SQL 注入等；兼容 OpenAI 与 Anthropic 协议；支持 MCP Server 扩展、OpenTelemetry 可观测、Session Viewer（浏览器回放评审会话、把评论标记为已修/忽略）、CI/CD 集成（GitHub Actions / GitLab CI / GitFlic CI / Gerrit）。已适配 Claude Code、Codex、Cursor、Kimi Code、OpenCode 等宿主 Agent，并提供**委派模式**（delegate，由宿主 Agent 用自带模型执行评审，OCR 只负责选文件与规则解析，无需配置 LLM Key）。Apache-2.0，Copyright 2026 Alibaba
   - 收录时间：2026-09-21
   - 技术栈：Go、JavaScript、TypeScript、Kotlin
@@ -181,6 +190,10 @@
   - 核心用途：前端界面生成提质
 
 ### 📄 文档生成
+- [Archify](https://github.com/tt-a1i/archify)：把「你想理解、规划或分享的东西」变成可交互的视觉图——面向编码 Agent 的技能（Skill），支持**架构图、工作流图、时序图、数据流图、生命周期图**五种类型，输入可以是一句描述，也可以是一个真实代码库。核心工程主张是**「先类型化、再渲染」**：①Agent 生成**类型化 JSON IR**（五种图形各有独立 schema）；②**原子化校验**——schema、布局、HTML/SVG、路由、标签与路径避让五类检查全部通过，候选产物才会替换上一个已验证版本；③失败返回**可修复回执**（`validate --json` / `deliver --json` 输出稳定规则码、精确主体、实测证据与受支持的修复项，而非 Node 堆栈），修正轮次限定两轮；④**last-good 实时预览**——可选桌面模式（仅监听 127.0.0.1 随机端口）监视单个 JSON，只有通过全部闸门的修订才刷新，写坏时保留上一版可用图；⑤**布局由判断力而非通用算法决定**——Agent 决定层级、间距、路径与强调，共享的自动端点确定性展开以免箭头堆在一个中点。产物是**单文件自包含 HTML**：无需安装即可在浏览器打开，带节点聚焦、上下游可达、精确路径、角色对比（Lens）、全图雷达（Map）、分章讲解（Story）与演示舞台（Presentation），并支持可分享链接状态还原（`#focus=` / `#route=` / `#lens=` / `#view=`）与 PNG / 动图 / **1200×630 分享卡**导出（动效有限、尊重 prefers-reduced-motion、永不进入正式导出）。真实性有两条硬约束：交互**只复用「已授权（authored）」的节点与关系**，不臆造拓扑、不声称运行时影响；需要举证时架构节点标 `SRC n` 并打开**锚定到某一公开 commit 的 Git 已验证文件与行号**。另有 **Architecture Delta**：对比 Before/Delta/After 三份已验证快照用于设计或 PR 评审，只呈现已授权事实的增删改移，**明确不推断**影响面、风险或合并安全性。已适配 Cursor、Claude Code、Codex CLI、opencode 等宿主 Agent（`npx skills add tt-a1i/archify -g`），另有 Claude.ai / Project Knowledge / DeepSeek Harness 社区集成；i18n 支持 `meta.locale=en|zh-CN`。隐私极简：更新检查仅 GET 固定 manifest 提醒，不发版本/Agent/项目数据/提示词/设备 ID，可用 `ARCHIFY_UPDATE_CHECK_DISABLED=1` 关闭。**明确不在范围内**：自动解析 Mermaid、通用自动布局、托管分享、所见即所得编辑。MIT
+  - 收录时间：2026-09-23
+  - 技术栈：JavaScript、HTML、CSS
+  - 核心用途：架构与流程可视化
 - [openwiki](https://github.com/langchain-ai/openwiki)：LangChain官方CLI，自动为代码库/个人知识编写并持续更新Markdown Wiki，含可视化器
   - 收录时间：2026-08-24
   - 技术栈：TypeScript、Python
@@ -225,6 +238,12 @@
 ---
 
 ## 🔧 按用途分类
+
+### 📐 架构与流程可视化
+- [Archify](https://github.com/tt-a1i/archify)：面向编码 Agent 的**架构与流程可视化技能**：把一句描述或一个真实代码库变成**架构图 / 工作流图 / 时序图 / 数据流图 / 生命周期图**，产物是带交互的**单文件自包含 HTML**（含节点聚焦、上下游可达、精确路径、角色对比、全图雷达、分章故事线与演示模式，可导出 PNG / 动图 / 1200×630 分享卡），转发即带走交互、离线可看。它与「让 AI 画图」类工具的核心差异在**可验证性**：生成的是**类型化 JSON IR**（五种图形各有独立 schema），经 schema / 布局 / HTML/SVG / 路由 / 标签避让**五类原子校验**全部通过才替换上一版已验证产物；失败给出**可修复回执**（规则码 + 精确主体 + 实测证据 + 受支持修复项）；可选桌面模式提供 **last-good 预览**（写坏时保留上一版可用图）。交互只复用作者写下的（authored）节点与关系——**不臆造拓扑、不声称运行时影响**；举证时节点标 `SRC n` 可打开锚定到公开 commit 的 Git 已验证文件与行号。另有 **Architecture Delta** 对比 Before/Delta/After 三快照做设计或 PR 评审，只搬事实、不推断影响。2026-09-01 登 GitHub Trending 周榜全语言第一，量子位专访。⚠️ 局限：**不解析 Mermaid**（已有 Mermaid 图无法导入）、无通用自动布局、无托管分享、无 WYSIWYG，生成环节需宿主 Agent + Node.js `^22.19.0 || >=24.0.0`；项目仅 5 个月、个人开发者、154 open issues。MIT
+  - 收录时间：2026-09-23
+  - 所属领域：文档生成、AI工程实践
+  - 技术栈：JavaScript、HTML、CSS
 
 ### 💬 聊天记录备份与分析
 - [WeChat EXP](https://github.com/sunhanaix/pc_wechat_exp)：本地聊天记录备份与分析的完整工程链路——①**提取与解密**：扫描微信进程内存取 SQLCipher 4 密钥（4.1.10+ 为只读 Config.Cipher 扫描，免管理员/免重启/不受密钥窗口期限制），AES-256-CBC 解密；V2 图片密钥用三策略收割（V2 头邻近扫描 / wx_key 模式定位 / 全内存正则），局限是仅能获取微信当前已加载到内存的图片密钥；②**查看与分析**：Flask + Vanilla JS SPA 查看器（头像三级加载、名称五级解析、全消息类型渲染、SSE 进度）、词云、Spotify Wrapped 风格年度报告、ECharts 综合报告、本地 Whisper 语音转文字；③**备份管线**：scanner → decryptor → migrator → indexer 四段式，支持硬链接增量备份与媒体清理。架构分层清晰（CLI / Web / Engine / Backup），Engine 不依赖 Flask，带 pytest 基建。⚠️ 仓库无 LICENSE（默认保留所有权利），数据提取类工具存在法律边界，仅供技术研究参考
