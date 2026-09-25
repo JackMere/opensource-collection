@@ -10,10 +10,10 @@
 
 | 指标 | 数量 |
 |------|------|
-| 收录项目总数 | 13 |
+| 收录项目总数 | 14 |
 | 覆盖领域分类 | 11 |
-| 覆盖用途分类 | 10 |
-| 最后更新 | 2026-09-24 |
+| 覆盖用途分类 | 11 |
+| 最后更新 | 2026-09-25 |
 
 ---
 
@@ -34,12 +34,16 @@
 | 11 | 2026-09-21 | OpenCodeReview | [alibaba/open-code-review](https://github.com/alibaba/open-code-review) | Go、JavaScript、TypeScript、Kotlin | 代码开发工具、AI工程实践 | AI研发流程改造 | 阿里内部打磨两年后开源的 AI 代码评审 CLI：以「确定性工程 + Agent 混合架构」约束评审流程，解决通用 Agent 的覆盖不全、定位漂移、质量波动三大问题，实测同模型下精确率与 F1 更高、token 仅约 1/9，⭐38.4K |
 | 12 | 2026-09-23 | Archify | [tt-a1i/archify](https://github.com/tt-a1i/archify) | JavaScript、HTML、CSS | 文档生成、AI工程实践 | 架构与流程可视化 | 面向编码 Agent 的架构可视化技能：把描述或代码库变成架构/工作流/时序/数据流/生命周期五类图，输出可交互的单文件 HTML，以「类型化 JSON IR + 五类原子校验 + 可修复回执」保证图表可验证，⭐70.3K |
 | 13 | 2026-09-24 | Matt Pocock Skills | [mattpocock/skills](https://github.com/mattpocock/skills) | Shell、JavaScript | AI工程实践、代码开发工具 | AI研发流程改造 | TypeScript 教育者 Matt Pocock 日常使用的 Agent 技能集（38 个）：以 grilling 设计树逼出真实需求、用 CONTEXT.md 共享语言压缩术语、TDD 反馈回路与「深模块」设计纪律改造研发流程；反「流程接管」、可拆可改、模型无关，⭐268.5K |
+| 14 | 2026-09-25 | codegraph | [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | C、Rust、TypeScript | 代码开发工具、AI工程实践、知识库管理 | Token压缩与上下文优化、代码理解与智能检索 | 预索引式代码知识图谱，Rust 内核 + tree-sitter 抽取符号/调用边/依赖边并自动同步变更，本地 SQLite 存储，支持 30+ 语言（含 C++/CUDA），以 MCP 方式服务 Claude Code、Codex、Hermes Agent 等，大库减少 88% 工具调用、62% token。 |
 
 ---
 
 ## 🕒 时间收录线（倒序）
 
 > 最新收录项目按时间倒序排列
+
+### 2026-09-25
+- 🗜️ [codegraph](https://github.com/colbymchenry/codegraph)：预索引代码知识图谱，符号+调用边+影响半径分析，支持 30+ 语言含 C++，本地 SQLite + MCP，服务 Hermes Agent 等（⭐ 72,067）
 
 ### 2026-09-24
 - 🛠️ [Matt Pocock Skills](https://github.com/mattpocock/skills)：把「先拷问到没有静默假设、再用共享语言说话、按 TDD 走接缝」做成 38 个可拆改技能——反流程接管、你显式调用每个决策，⭐268.5K
@@ -100,6 +104,7 @@
 - #工作日志与时间追踪
 - #聊天记录备份与分析
 - #架构与流程可视化
+- #代码理解与智能检索
 
 ---
 
@@ -118,6 +123,10 @@
   - 核心用途：前端界面生成提质
 
 ### 🏗️ AI工程实践
+- [codegraph](https://github.com/colbymchenry/codegraph)：预索引式代码知识图谱，Rust 内核 + tree-sitter 抽取符号/调用边/依赖边，文件监听自动同步，本地 SQLite 存储，30+ 语言含 C++/CUDA，以 MCP 服务 Claude Code、Codex、Hermes Agent 等。
+  - 收录时间：2026-09-25
+  - 技术栈：C、Rust、TypeScript
+  - 核心用途：Token压缩与上下文优化、代码理解与智能检索
 - [Matt Pocock Skills](https://github.com/mattpocock/skills)：Matt Pocock（TypeScript 圈知名教育者，Total TypeScript / AI Hero 创始人）日常使用的 Agent 技能集，副标题即定位宣言「**Skills for Real Engineers**」——**not vibe coding**。**最鲜明的态度是反「流程接管」**：README 开篇直接点名批评同类方案——「Approaches like **GSD, BMAD, and Spec-Kit** try to help by **owning the process**. But while doing so, they **take away your control** and make bugs in the process hard to resolve.」它的方案反过来：**small, easy to adapt, and composable**（「Make them your own」），并强调 **They work with any model**。理论血统来自经典工程著作而非自创：*The Pragmatic Programmer*、Eric Evans《领域驱动设计》、Ousterhout《软件设计哲学》、Kent Beck《解析极限编程》。
 
 **针对四类失败模式**：①**Agent 没做我想要的** → **grilling 拷问式访谈**（把方案建模成**设计树**，按**轮次**推进——每轮问整个 **frontier**（前置条件已 settle、现在就能问的决策），每题编号并给出推荐答案；找事实是 Agent 的活、决策是用户的；**frontier 为空才算完成，用户确认前不得动手**）；②**Agent 太啰嗦** → **`CONTEXT.md` 共享语言**（作者自称「可能是本仓库最酷的技术」——把「课程某章节里的一节被『实体化』（即给了文件系统位置）时有问题」压缩成「**实体化级联**（materialization cascade）有问题」，连带收益是命名一致、代码库更好导航、**Agent 思考更省 token**）；③**代码跑不起来** → 反馈回路（静态类型 + 浏览器 + **TDD red-green-refactor**，另有 `/diagnosing-bugs` 纪律化调试环）；④**代码变泥球** → 关心设计（**深模块** deep modules，`/improve-codebase-architecture` 定期扫描）。
@@ -172,12 +181,20 @@
   - 核心用途：知识库构建与RAG问答
 
 ### 🧠 知识库管理
+- [codegraph](https://github.com/colbymchenry/codegraph)：预索引式代码知识图谱，Rust 内核 + tree-sitter 抽取符号/调用边/依赖边，文件监听自动同步，本地 SQLite 存储，30+ 语言含 C++/CUDA，以 MCP 服务 Claude Code、Codex、Hermes Agent 等。
+  - 收录时间：2026-09-25
+  - 技术栈：C、Rust、TypeScript
+  - 核心用途：Token压缩与上下文优化、代码理解与智能检索
 - [WeKnora](https://github.com/Tencent/WeKnora)：企业级 LLM 知识管理框架，把散落文档沉淀为可查询、可推理、可自我演进的知识资产，⭐23.2K
   - 收录时间：2026-09-15
   - 技术栈：Go、Vue、TypeScript、Docker
   - 核心用途：知识库构建与RAG问答
 
 ### 💻 代码开发工具
+- [codegraph](https://github.com/colbymchenry/codegraph)：预索引式代码知识图谱，Rust 内核 + tree-sitter 抽取符号/调用边/依赖边，文件监听自动同步，本地 SQLite 存储，30+ 语言含 C++/CUDA，以 MCP 服务 Claude Code、Codex、Hermes Agent 等。
+  - 收录时间：2026-09-25
+  - 技术栈：C、Rust、TypeScript
+  - 核心用途：Token压缩与上下文优化、代码理解与智能检索
 - [Matt Pocock Skills](https://github.com/mattpocock/skills)：Matt Pocock（TypeScript 圈知名教育者，Total TypeScript / AI Hero 创始人）日常使用的 Agent 技能集，副标题即定位宣言「**Skills for Real Engineers**」——**not vibe coding**。**最鲜明的态度是反「流程接管」**：README 开篇直接点名批评同类方案——「Approaches like **GSD, BMAD, and Spec-Kit** try to help by **owning the process**. But while doing so, they **take away your control** and make bugs in the process hard to resolve.」它的方案反过来：**small, easy to adapt, and composable**（「Make them your own」），并强调 **They work with any model**。理论血统来自经典工程著作而非自创：*The Pragmatic Programmer*、Eric Evans《领域驱动设计》、Ousterhout《软件设计哲学》、Kent Beck《解析极限编程》。
 
 **针对四类失败模式**：①**Agent 没做我想要的** → **grilling 拷问式访谈**（把方案建模成**设计树**，按**轮次**推进——每轮问整个 **frontier**（前置条件已 settle、现在就能问的决策），每题编号并给出推荐答案；找事实是 Agent 的活、决策是用户的；**frontier 为空才算完成，用户确认前不得动手**）；②**Agent 太啰嗦** → **`CONTEXT.md` 共享语言**（作者自称「可能是本仓库最酷的技术」——把「课程某章节里的一节被『实体化』（即给了文件系统位置）时有问题」压缩成「**实体化级联**（materialization cascade）有问题」，连带收益是命名一致、代码库更好导航、**Agent 思考更省 token**）；③**代码跑不起来** → 反馈回路（静态类型 + 浏览器 + **TDD red-green-refactor**，另有 `/diagnosing-bugs` 纪律化调试环）；④**代码变泥球** → 关心设计（**深模块** deep modules，`/improve-codebase-architecture` 定期扫描）。
@@ -263,6 +280,12 @@
 
 ## 🔧 按用途分类
 
+### 📌 代码理解与智能检索
+- [codegraph](https://github.com/colbymchenry/codegraph)：预索引代码知识图谱，符号+调用边+影响半径分析，支持 30+ 语言含 C++，本地 SQLite + MCP，服务 Hermes Agent 等
+  - 收录时间：2026-09-25
+  - 所属领域：代码开发工具、AI工程实践、知识库管理
+  - 技术栈：C、Rust、TypeScript
+
 ### 📐 架构与流程可视化
 - [Archify](https://github.com/tt-a1i/archify)：面向编码 Agent 的**架构与流程可视化技能**：把一句描述或一个真实代码库变成**架构图 / 工作流图 / 时序图 / 数据流图 / 生命周期图**，产物是带交互的**单文件自包含 HTML**（含节点聚焦、上下游可达、精确路径、角色对比、全图雷达、分章故事线与演示模式，可导出 PNG / 动图 / 1200×630 分享卡），转发即带走交互、离线可看。它与「让 AI 画图」类工具的核心差异在**可验证性**：生成的是**类型化 JSON IR**（五种图形各有独立 schema），经 schema / 布局 / HTML/SVG / 路由 / 标签避让**五类原子校验**全部通过才替换上一版已验证产物；失败给出**可修复回执**（规则码 + 精确主体 + 实测证据 + 受支持修复项）；可选桌面模式提供 **last-good 预览**（写坏时保留上一版可用图）。交互只复用作者写下的（authored）节点与关系——**不臆造拓扑、不声称运行时影响**；举证时节点标 `SRC n` 可打开锚定到公开 commit 的 Git 已验证文件与行号。另有 **Architecture Delta** 对比 Before/Delta/After 三快照做设计或 PR 评审，只搬事实、不推断影响。2026-09-01 登 GitHub Trending 周榜全语言第一，量子位专访。⚠️ 局限：**不解析 Mermaid**（已有 Mermaid 图无法导入）、无通用自动布局、无托管分享、无 WYSIWYG，生成环节需宿主 Agent + Node.js `^22.19.0 || >=24.0.0`；项目仅 5 个月、个人开发者、154 open issues。MIT
   - 收录时间：2026-09-23
@@ -328,6 +351,10 @@
   - 技术栈：TypeScript、Python
 
 ### 🗜️ Token压缩与上下文优化
+- [codegraph](https://github.com/colbymchenry/codegraph)：预索引式代码知识图谱，Rust 内核 + tree-sitter 抽取符号/调用边/依赖边，文件监听自动同步，本地 SQLite 存储，30+ 语言含 C++/CUDA，以 MCP 服务 Claude Code、Codex、Hermes Agent 等。
+  - 收录时间：2026-09-25
+  - 所属领域：代码开发工具、AI工程实践、知识库管理
+  - 技术栈：C、Rust、TypeScript
 - [headroom](https://github.com/headroomlabs-ai/headroom)：对JSON数据节省60-95%token，编码代理节省15-20%token，本地优先，数据安全
   - 收录时间：2026-07-24
   - 所属领域：AI大模型、代码开发工具、Token优化
