@@ -10,7 +10,7 @@
 
 | 指标 | 数量 |
 |------|------|
-| 收录项目总数 | 14 |
+| 收录项目总数 | 15 |
 | 覆盖领域分类 | 11 |
 | 覆盖用途分类 | 11 |
 | 最后更新 | 2026-09-25 |
@@ -35,6 +35,7 @@
 | 12 | 2026-09-23 | Archify | [tt-a1i/archify](https://github.com/tt-a1i/archify) | JavaScript、HTML、CSS | 文档生成、AI工程实践 | 架构与流程可视化 | 面向编码 Agent 的架构可视化技能：把描述或代码库变成架构/工作流/时序/数据流/生命周期五类图，输出可交互的单文件 HTML，以「类型化 JSON IR + 五类原子校验 + 可修复回执」保证图表可验证，⭐70.3K |
 | 13 | 2026-09-24 | Matt Pocock Skills | [mattpocock/skills](https://github.com/mattpocock/skills) | Shell、JavaScript | AI工程实践、代码开发工具 | AI研发流程改造 | TypeScript 教育者 Matt Pocock 日常使用的 Agent 技能集（38 个）：以 grilling 设计树逼出真实需求、用 CONTEXT.md 共享语言压缩术语、TDD 反馈回路与「深模块」设计纪律改造研发流程；反「流程接管」、可拆可改、模型无关，⭐268.5K |
 | 14 | 2026-09-25 | codegraph | [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | C、Rust、TypeScript | 代码开发工具、AI工程实践、知识库管理 | Token压缩与上下文优化、代码理解与智能检索 | 预索引式代码知识图谱，Rust 内核 + tree-sitter 抽取符号/调用边/依赖边并自动同步变更，本地 SQLite 存储，支持 30+ 语言（含 C++/CUDA），以 MCP 方式服务 Claude Code、Codex、Hermes Agent 等，大库减少 88% 工具调用、62% token。 |
+| 15 | 2026-09-25 | AOCI-CODE | [aoci-spec/aoci-code](https://github.com/aoci-spec/aoci-code) | Go、TypeScript | 代码开发工具、AI工程实践、知识库管理 | Token压缩与上下文优化、代码理解与智能检索、代码库文档生成 | LLM 撰写的 Git 版本化代码库语义索引：每个文件/数据表一条 F职责-R关联-A契约-S隐藏约束 条目，纯文本可 diff 可回滚，本地 Go 单二进制 + 9 工具 MCP，支持 MySQL/PostgreSQL/openGauss 数据库表级索引，索引约 300K token 可覆盖数十万行代码。 |
 
 ---
 
@@ -44,6 +45,7 @@
 
 ### 2026-09-25
 - 🗜️ [codegraph](https://github.com/colbymchenry/codegraph)：预索引代码知识图谱，符号+调用边+影响半径分析，支持 30+ 语言含 C++，本地 SQLite + MCP，服务 Hermes Agent 等（⭐ 72,067）
+- 🗜️ [AOCI-CODE](https://github.com/aoci-spec/aoci-code)：LLM 撰写的 Git 版本化代码库语义索引，F/R/A/S 四段式条目，纯文本可 diff 可回滚，本地 Go 二进制 + MCP（⭐ 586）
 
 ### 2026-09-24
 - 🛠️ [Matt Pocock Skills](https://github.com/mattpocock/skills)：把「先拷问到没有静默假设、再用共享语言说话、按 TDD 走接缝」做成 38 个可拆改技能——反流程接管、你显式调用每个决策，⭐268.5K
@@ -123,6 +125,10 @@
   - 核心用途：前端界面生成提质
 
 ### 🏗️ AI工程实践
+- [AOCI-CODE](https://github.com/aoci-spec/aoci-code)：LLM 撰写的 Git 版本化代码库语义索引：每个文件/数据表一条 F职责-R关联-A契约-S隐藏约束 条目，纯文本可 diff 可回滚，本地 Go 单二进制 + 9 工具 MCP。
+  - 收录时间：2026-09-25
+  - 技术栈：Go、TypeScript
+  - 核心用途：Token压缩与上下文优化、代码理解与智能检索、代码库文档生成
 - [codegraph](https://github.com/colbymchenry/codegraph)：预索引式代码知识图谱，Rust 内核 + tree-sitter 抽取符号/调用边/依赖边，文件监听自动同步，本地 SQLite 存储，30+ 语言含 C++/CUDA，以 MCP 服务 Claude Code、Codex、Hermes Agent 等。
   - 收录时间：2026-09-25
   - 技术栈：C、Rust、TypeScript
@@ -181,6 +187,10 @@
   - 核心用途：知识库构建与RAG问答
 
 ### 🧠 知识库管理
+- [AOCI-CODE](https://github.com/aoci-spec/aoci-code)：LLM 撰写的 Git 版本化代码库语义索引：每个文件/数据表一条 F职责-R关联-A契约-S隐藏约束 条目，纯文本可 diff 可回滚，本地 Go 单二进制 + 9 工具 MCP。
+  - 收录时间：2026-09-25
+  - 技术栈：Go、TypeScript
+  - 核心用途：Token压缩与上下文优化、代码理解与智能检索、代码库文档生成
 - [codegraph](https://github.com/colbymchenry/codegraph)：预索引式代码知识图谱，Rust 内核 + tree-sitter 抽取符号/调用边/依赖边，文件监听自动同步，本地 SQLite 存储，30+ 语言含 C++/CUDA，以 MCP 服务 Claude Code、Codex、Hermes Agent 等。
   - 收录时间：2026-09-25
   - 技术栈：C、Rust、TypeScript
@@ -191,6 +201,10 @@
   - 核心用途：知识库构建与RAG问答
 
 ### 💻 代码开发工具
+- [AOCI-CODE](https://github.com/aoci-spec/aoci-code)：LLM 撰写的 Git 版本化代码库语义索引：每个文件/数据表一条 F职责-R关联-A契约-S隐藏约束 条目，纯文本可 diff 可回滚，本地 Go 单二进制 + 9 工具 MCP。
+  - 收录时间：2026-09-25
+  - 技术栈：Go、TypeScript
+  - 核心用途：Token压缩与上下文优化、代码理解与智能检索、代码库文档生成
 - [codegraph](https://github.com/colbymchenry/codegraph)：预索引式代码知识图谱，Rust 内核 + tree-sitter 抽取符号/调用边/依赖边，文件监听自动同步，本地 SQLite 存储，30+ 语言含 C++/CUDA，以 MCP 服务 Claude Code、Codex、Hermes Agent 等。
   - 收录时间：2026-09-25
   - 技术栈：C、Rust、TypeScript
@@ -281,6 +295,10 @@
 ## 🔧 按用途分类
 
 ### 📌 代码理解与智能检索
+- [AOCI-CODE](https://github.com/aoci-spec/aoci-code)：LLM 撰写的 Git 版本化代码库语义索引：每个文件/数据表一条 F职责-R关联-A契约-S隐藏约束 条目，纯文本可 diff 可回滚，本地 Go 单二进制 + 9 工具 MCP。
+  - 收录时间：2026-09-25
+  - 所属领域：代码开发工具、AI工程实践、知识库管理
+  - 技术栈：Go、TypeScript
 - [codegraph](https://github.com/colbymchenry/codegraph)：预索引代码知识图谱，符号+调用边+影响半径分析，支持 30+ 语言含 C++，本地 SQLite + MCP，服务 Hermes Agent 等
   - 收录时间：2026-09-25
   - 所属领域：代码开发工具、AI工程实践、知识库管理
@@ -345,12 +363,20 @@
   - 技术栈：Go、Vue、TypeScript
 
 ### 📖 代码库文档生成
+- [AOCI-CODE](https://github.com/aoci-spec/aoci-code)：LLM 撰写的 Git 版本化代码库语义索引：每个文件/数据表一条 F职责-R关联-A契约-S隐藏约束 条目，纯文本可 diff 可回滚，本地 Go 单二进制 + 9 工具 MCP。
+  - 收录时间：2026-09-25
+  - 所属领域：代码开发工具、AI工程实践、知识库管理
+  - 技术栈：Go、TypeScript
 - [openwiki](https://github.com/langchain-ai/openwiki)：扫描代码库，用Agent自动编写、维护Markdown文档，随代码变更持续更新，支持可视化
   - 收录时间：2026-08-24
   - 所属领域：代码开发工具、AI大模型、文档生成
   - 技术栈：TypeScript、Python
 
 ### 🗜️ Token压缩与上下文优化
+- [AOCI-CODE](https://github.com/aoci-spec/aoci-code)：LLM 撰写的 Git 版本化代码库语义索引：每个文件/数据表一条 F职责-R关联-A契约-S隐藏约束 条目，纯文本可 diff 可回滚，本地 Go 单二进制 + 9 工具 MCP。
+  - 收录时间：2026-09-25
+  - 所属领域：代码开发工具、AI工程实践、知识库管理
+  - 技术栈：Go、TypeScript
 - [codegraph](https://github.com/colbymchenry/codegraph)：预索引式代码知识图谱，Rust 内核 + tree-sitter 抽取符号/调用边/依赖边，文件监听自动同步，本地 SQLite 存储，30+ 语言含 C++/CUDA，以 MCP 服务 Claude Code、Codex、Hermes Agent 等。
   - 收录时间：2026-09-25
   - 所属领域：代码开发工具、AI工程实践、知识库管理
