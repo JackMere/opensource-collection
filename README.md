@@ -10,10 +10,10 @@
 
 | 指标 | 数量 |
 |------|------|
-| 收录项目总数 | 15 |
+| 收录项目总数 | 16 |
 | 覆盖领域分类 | 11 |
 | 覆盖用途分类 | 11 |
-| 最后更新 | 2026-09-25 |
+| 最后更新 | 2026-10-09 |
 
 ---
 
@@ -36,6 +36,7 @@
 | 13 | 2026-09-24 | Matt Pocock Skills | [mattpocock/skills](https://github.com/mattpocock/skills) | Shell、JavaScript | AI工程实践、代码开发工具 | AI研发流程改造 | TypeScript 教育者 Matt Pocock 日常使用的 Agent 技能集（38 个）：以 grilling 设计树逼出真实需求、用 CONTEXT.md 共享语言压缩术语、TDD 反馈回路与「深模块」设计纪律改造研发流程；反「流程接管」、可拆可改、模型无关，⭐268.5K |
 | 14 | 2026-09-25 | codegraph | [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | C、Rust、TypeScript | 代码开发工具、AI工程实践、知识库管理 | Token压缩与上下文优化、代码理解与智能检索 | 预索引式代码知识图谱，Rust 内核 + tree-sitter 抽取符号/调用边/依赖边并自动同步变更，本地 SQLite 存储，支持 30+ 语言（含 C++/CUDA），以 MCP 方式服务 Claude Code、Codex、Hermes Agent 等，大库减少 88% 工具调用、62% token。 |
 | 15 | 2026-09-25 | AOCI-CODE | [aoci-spec/aoci-code](https://github.com/aoci-spec/aoci-code) | Go、TypeScript | 代码开发工具、AI工程实践、知识库管理 | Token压缩与上下文优化、代码理解与智能检索、代码库文档生成 | LLM 撰写的 Git 版本化代码库语义索引：每个文件/数据表一条 F职责-R关联-A契约-S隐藏约束 条目，纯文本可 diff 可回滚，本地 Go 单二进制 + 9 工具 MCP，支持 MySQL/PostgreSQL/openGauss 数据库表级索引，索引约 300K token 可覆盖数十万行代码。 |
+| 16 | 2026-10-09 | 2026热门开源UI组件库盘点 | [菜鸟教程/微信公众号](https://mp.weixin.qq.com/s/xoIrdVzFuRr1YxmpBDRLKA) | 技术文章（微信公众号·菜鸟教程） | 前端设计、代码开发工具 | 前端界面生成提质 | 菜鸟教程盘点2026年12个最热门开源UI组件库，核心观点是先选组件库统一设计规则再让AI发挥，附六组选型对照，与本库taste-skill一禁一立互补 |
 
 ---
 
@@ -96,11 +97,12 @@
 |---|---|---|
 | [Dayflow](https://github.com/JerryZLiu/Dayflow) | 10 秒采帧批压缩交 AI 还原时间线，支持离线 | [docs](docs/Dayflow_2026-09-17.md) |
 
-### 🎨 前端界面生成提质（1）
+### 🎨 前端界面生成提质（2）
 
 | 项目 | 一句话定位 | 详情 |
 |---|---|---|
 | [taste-skill](https://github.com/Leonxlnx/taste-skill) | 三旋钮配置 + 156 条 AI 味禁令 + 机械可验前置检查 | [docs](docs/taste-skill_2026-09-17.md) |
+| [2026热门开源UI组件库盘点](https://mp.weixin.qq.com/s/xoIrdVzFuRr1YxmpBDRLKA) | 与本库No.7 taste-skill互补：taste-skill是反模板化禁令，本文是正向选型指南，先选库再约束，配套解决AI生成界面的审美问题 | [docs](docs/ui-component-libs-2026_2026-10-09.md) |
 
 ### 🔄 AI研发流程改造（4）
 
