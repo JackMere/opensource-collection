@@ -10,10 +10,10 @@
 
 | 指标 | 数量 |
 |------|------|
-| 收录项目总数 | 16 |
+| 收录项目总数 | 22 |
 | 覆盖领域分类 | 11 |
-| 覆盖用途分类 | 11 |
-| 最后更新 | 2026-10-09 |
+| 覆盖用途分类 | 12 |
+| 最后更新 | 2026-10-11 |
 
 ---
 
@@ -37,6 +37,12 @@
 | 14 | 2026-09-25 | codegraph | [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | C、Rust、TypeScript | 代码开发工具、AI工程实践、知识库管理 | Token压缩与上下文优化、代码理解与智能检索 | 预索引式代码知识图谱，Rust 内核 + tree-sitter 抽取符号/调用边/依赖边并自动同步变更，本地 SQLite 存储，支持 30+ 语言（含 C++/CUDA），以 MCP 方式服务 Claude Code、Codex、Hermes Agent 等，大库减少 88% 工具调用、62% token。 |
 | 15 | 2026-09-25 | AOCI-CODE | [aoci-spec/aoci-code](https://github.com/aoci-spec/aoci-code) | Go、TypeScript | 代码开发工具、AI工程实践、知识库管理 | Token压缩与上下文优化、代码理解与智能检索、代码库文档生成 | LLM 撰写的 Git 版本化代码库语义索引：每个文件/数据表一条 F职责-R关联-A契约-S隐藏约束 条目，纯文本可 diff 可回滚，本地 Go 单二进制 + 9 工具 MCP，支持 MySQL/PostgreSQL/openGauss 数据库表级索引，索引约 300K token 可覆盖数十万行代码。 |
 | 16 | 2026-10-09 | 2026热门开源UI组件库盘点 | [菜鸟教程/微信公众号](https://mp.weixin.qq.com/s/xoIrdVzFuRr1YxmpBDRLKA) | 技术文章（微信公众号·菜鸟教程） | 前端设计、代码开发工具 | 前端界面生成提质 | 菜鸟教程盘点2026年12个最热门开源UI组件库，核心观点是先选组件库统一设计规则再让AI发挥，附六组选型对照，与本库taste-skill一禁一立互补 |
+| 17 | 2026-10-11 | HyperFrames | [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) | TypeScript、JavaScript | AI大模型、代码开发工具 | 视频生成与剪辑 | HeyGen开源的确定性视频渲染框架，写HTML即渲染视频，为AI Agent而生，配套分镜与生态工具，⭐60.6K |
+| 18 | 2026-10-11 | video-use | [browser-use/video-use](https://github.com/browser-use/video-use) | Python、HTML | AI大模型、代码开发工具 | 视频生成与剪辑 | browser-use出品的对话式视频剪辑Agent框架，编码Agent直接剪视频，转录剪切字幕调色动画叠加全链路，⭐28.6K |
+| 19 | 2026-10-11 | Remotion Skills | [remotion-dev/skills](https://github.com/remotion-dev/skills) | TypeScript、JavaScript | AI大模型、代码开发工具 | 视频生成与剪辑 | Remotion官方Agent Skills仓，React程序化视频的字幕渲染地图等最佳实践，配主框架使用，⭐5.0K（⚠️未声明开源许可证） |
+| 20 | 2026-10-11 | Generative Media Skills | [calesthio/generative-media-skills](https://github.com/calesthio/generative-media-skills) | Python | AI大模型、代码开发工具 | 视频生成与剪辑 | 研究支撑的多媒体Agent技能集，覆盖图像视频音频语音生成工作流，OpenMontage作者出品，⭐197（近3个月未更新） |
+| 21 | 2026-10-11 | chengfeng-videocut-skills | [Agentchengfeng/chengfeng-videocut-skills](https://github.com/Agentchengfeng/chengfeng-videocut-skills) | JavaScript、HTML | AI大模型、代码开发工具 | 视频生成与剪辑 | 中文口播视频剪辑Agent，Claude Code Skills形态，Codex Marketplace插件分发，中文断句字幕专项优化，⭐3.0K |
+| 22 | 2026-10-11 | seedance2-skill | [dexhunter/seedance2-skill](https://github.com/dexhunter/seedance2-skill) | 提示词模板为主 | AI大模型、代码开发工具 | 视频生成与剪辑 | Seedance2.0视频提示词Skill，镜头语言与模板库，专攻字节Seedance生成质量以降试错成本，⭐4.2K |
 
 ---
 
@@ -67,10 +73,37 @@
 - #聊天记录备份与分析
 - #架构与流程可视化
 - #代码理解与智能检索
+- #视频生成与剪辑
 
 ## 🔧 按用途分类
 
 > 按使用场景检索；完整分析见 [docs/](docs/)
+
+### 🎬 视频生成与剪辑
+- [seedance2-skill](https://github.com/dexhunter/seedance2-skill)：Seedance2.0视频提示词Skill：镜头语言模板库，专攻生成质量降试错成本
+  - 收录时间：2026-10-11
+  - 所属领域：AI大模型、代码开发工具
+  - 技术栈：提示词模板为主
+- [chengfeng-videocut-skills](https://github.com/Agentchengfeng/chengfeng-videocut-skills)：中文口播视频剪辑Agent：Claude Code Skills与Codex Marketplace插件形态
+  - 收录时间：2026-10-11
+  - 所属领域：AI大模型、代码开发工具
+  - 技术栈：JavaScript、HTML
+- [Generative Media Skills](https://github.com/calesthio/generative-media-skills)：研究支撑的多媒体技能集：图像视频音频语音生成与工作流（近3个月未更新）
+  - 收录时间：2026-10-11
+  - 所属领域：AI大模型、代码开发工具
+  - 技术栈：Python
+- [Remotion Skills](https://github.com/remotion-dev/skills)：Remotion官方Agent技能仓：字幕渲染地图等React视频最佳实践（⚠️未声明开源许可证）
+  - 收录时间：2026-10-11
+  - 所属领域：AI大模型、代码开发工具
+  - 技术栈：TypeScript、JavaScript
+- [video-use](https://github.com/browser-use/video-use)：browser-use出品的对话式视频剪辑框架：转录剪切字幕调色动画叠加全链路
+  - 收录时间：2026-10-11
+  - 所属领域：AI大模型、代码开发工具
+  - 技术栈：Python、HTML
+- [HyperFrames](https://github.com/heygen-com/hyperframes)：HeyGen开源的确定性视频渲染框架，Agent写HTML即渲染成片
+  - 收录时间：2026-10-11
+  - 所属领域：AI大模型、代码开发工具
+  - 技术栈：TypeScript、JavaScript
 
 ### 📌 代码理解与智能检索（2）
 
