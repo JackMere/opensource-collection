@@ -10,10 +10,10 @@
 
 | 指标 | 数量 |
 |------|------|
-| 收录项目总数 | 22 |
+| 收录项目总数 | 23 |
 | 覆盖领域分类 | 11 |
 | 覆盖用途分类 | 12 |
-| 最后更新 | 2026-10-11 |
+| 最后更新 | 2026-10-13 |
 
 ---
 
@@ -43,6 +43,7 @@
 | 20 | 2026-10-11 | Generative Media Skills | [calesthio/generative-media-skills](https://github.com/calesthio/generative-media-skills) | Python | AI大模型、代码开发工具 | 视频生成与剪辑 | 研究支撑的多媒体Agent技能集，覆盖图像视频音频语音生成工作流，OpenMontage作者出品，⭐197（近3个月未更新） |
 | 21 | 2026-10-11 | chengfeng-videocut-skills | [Agentchengfeng/chengfeng-videocut-skills](https://github.com/Agentchengfeng/chengfeng-videocut-skills) | JavaScript、HTML | AI大模型、代码开发工具 | 视频生成与剪辑 | 中文口播视频剪辑Agent，Claude Code Skills形态，Codex Marketplace插件分发，中文断句字幕专项优化，⭐3.0K |
 | 22 | 2026-10-11 | seedance2-skill | [dexhunter/seedance2-skill](https://github.com/dexhunter/seedance2-skill) | 提示词模板为主 | AI大模型、代码开发工具 | 视频生成与剪辑 | Seedance2.0视频提示词Skill，镜头语言与模板库，专攻字节Seedance生成质量以降试错成本，⭐4.2K |
+| 23 | 2026-10-13 | rea | [morluto/rea](https://github.com/morluto/rea) | TypeScript、JavaScript | AI大模型、代码开发工具 | 代码理解与智能检索 | Agent逆向工程工具箱，MCP+CLI双形态，从应用行为到原生二进制全覆盖，返回带证据的发现，Ghidra/IDA/JADX按需接入，⭐166.3K |
 
 ---
 
@@ -105,12 +106,13 @@
   - 所属领域：AI大模型、代码开发工具
   - 技术栈：TypeScript、JavaScript
 
-### 📌 代码理解与智能检索（2）
+### 📌 代码理解与智能检索（3）
 
 | 项目 | 一句话定位 | 详情 |
 |---|---|---|
 | [codegraph](https://github.com/colbymchenry/codegraph) | 符号+调用边+影响半径，30+ 语言含 C++ | [docs](docs/codegraph_2026-09-25.md) |
 | [AOCI-CODE](https://github.com/aoci-spec/aoci-code) | F/R/A/S 四段式语义索引，纯文本可回滚 | [docs](docs/AOCI-CODE_2026-09-25.md) |
+| [rea](https://github.com/morluto/rea) | Agent逆向工程工具箱：MCP调用 inspect 目标返回带证据发现，覆盖二进制/APK/Electron/固件/抓包 | [docs](docs/rea_2026-10-13.md) |
 
 ### 📐 架构与流程可视化（1）
 
