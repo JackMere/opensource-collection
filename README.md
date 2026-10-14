@@ -10,10 +10,10 @@
 
 | 指标 | 数量 |
 |------|------|
-| 收录项目总数 | 23 |
+| 收录项目总数 | 24 |
 | 覆盖领域分类 | 11 |
-| 覆盖用途分类 | 12 |
-| 最后更新 | 2026-10-13 |
+| 覆盖用途分类 | 13 |
+| 最后更新 | 2026-10-14 |
 
 ---
 
@@ -44,6 +44,7 @@
 | 21 | 2026-10-11 | chengfeng-videocut-skills | [Agentchengfeng/chengfeng-videocut-skills](https://github.com/Agentchengfeng/chengfeng-videocut-skills) | JavaScript、HTML | AI大模型、代码开发工具 | 视频生成与剪辑 | 中文口播视频剪辑Agent，Claude Code Skills形态，Codex Marketplace插件分发，中文断句字幕专项优化，⭐3.0K |
 | 22 | 2026-10-11 | seedance2-skill | [dexhunter/seedance2-skill](https://github.com/dexhunter/seedance2-skill) | 提示词模板为主 | AI大模型、代码开发工具 | 视频生成与剪辑 | Seedance2.0视频提示词Skill，镜头语言与模板库，专攻字节Seedance生成质量以降试错成本，⭐4.2K |
 | 23 | 2026-10-13 | rea | [morluto/rea](https://github.com/morluto/rea) | TypeScript、JavaScript | AI大模型、代码开发工具 | 代码理解与智能检索 | Agent逆向工程工具箱，MCP+CLI双形态，从应用行为到原生二进制全覆盖，返回带证据的发现，Ghidra/IDA/JADX按需接入，⭐166.3K |
+| 24 | 2026-10-14 | PentAGI | [vxcontrol/pentagi](https://github.com/vxcontrol/pentagi) | Go、TypeScript | AI大模型、代码开发工具 | 自主渗透测试 | 自托管多Agent自主渗透测试系统，自然语言定目标，沙箱调用20+工具执行并出报告，模型层开放可接自建网关，⭐28.2K |
 
 ---
 
@@ -75,10 +76,17 @@
 - #架构与流程可视化
 - #代码理解与智能检索
 - #视频生成与剪辑
+- #自主渗透测试
 
 ## 🔧 按用途分类
 
 > 按使用场景检索；完整分析见 [docs/](docs/)
+
+### 🛡️ 自主渗透测试
+- [PentAGI](https://github.com/vxcontrol/pentagi)：自托管多Agent渗透测试系统，沙箱执行20+工具并沉淀经验
+  - 收录时间：2026-10-14
+  - 所属领域：AI大模型、代码开发工具
+  - 技术栈：Go、TypeScript
 
 ### 🎬 视频生成与剪辑
 - [seedance2-skill](https://github.com/dexhunter/seedance2-skill)：Seedance2.0视频提示词Skill：镜头语言模板库，专攻生成质量降试错成本
