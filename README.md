@@ -10,10 +10,10 @@
 
 | 指标 | 数量 |
 |------|------|
-| 收录项目总数 | 24 |
+| 收录项目总数 | 25 |
 | 覆盖领域分类 | 11 |
 | 覆盖用途分类 | 13 |
-| 最后更新 | 2026-10-14 |
+| 最后更新 | 2026-10-19 |
 
 ---
 
@@ -45,6 +45,7 @@
 | 22 | 2026-10-11 | seedance2-skill | [dexhunter/seedance2-skill](https://github.com/dexhunter/seedance2-skill) | 提示词模板为主 | AI大模型、代码开发工具 | 视频生成与剪辑 | Seedance2.0视频提示词Skill，镜头语言与模板库，专攻字节Seedance生成质量以降试错成本，⭐4.2K |
 | 23 | 2026-10-13 | rea | [morluto/rea](https://github.com/morluto/rea) | TypeScript、JavaScript | AI大模型、代码开发工具 | 代码理解与智能检索 | Agent逆向工程工具箱，MCP+CLI双形态，从应用行为到原生二进制全覆盖，返回带证据的发现，Ghidra/IDA/JADX按需接入，⭐166.3K |
 | 24 | 2026-10-14 | PentAGI | [vxcontrol/pentagi](https://github.com/vxcontrol/pentagi) | Go、TypeScript | AI大模型、代码开发工具 | 自主渗透测试 | 自托管多Agent自主渗透测试系统，自然语言定目标，沙箱调用20+工具执行并出报告，模型层开放可接自建网关，⭐28.2K |
+| 25 | 2026-10-19 | OpenMontage | [calesthio/OpenMontage](https://github.com/calesthio/OpenMontage) | Python、HTML、JavaScript | AI大模型、代码开发工具 | 视频生成与剪辑 | 开源Agentic视频制片系统：12条生产线+100余工具+700余份技能文档，从选题研究到成片自动走完并带质量闸门，⭐70.0K（AGPL-3.0） |
 
 ---
 
@@ -89,6 +90,10 @@
   - 技术栈：Go、TypeScript
 
 ### 🎬 视频生成与剪辑
+- [OpenMontage](https://github.com/calesthio/OpenMontage)：开源Agentic视频制片系统：12条生产线+100余工具+700余份技能文档，从选题研究到成片自动走完并带质量闸门（AGPL-3.0）
+  - 收录时间：2026-10-19
+  - 所属领域：AI大模型、代码开发工具
+  - 技术栈：Python、HTML、JavaScript
 - [seedance2-skill](https://github.com/dexhunter/seedance2-skill)：Seedance2.0视频提示词Skill：镜头语言模板库，专攻生成质量降试错成本
   - 收录时间：2026-10-11
   - 所属领域：AI大模型、代码开发工具
