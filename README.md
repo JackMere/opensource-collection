@@ -10,7 +10,7 @@
 
 | 指标 | 数量 |
 |------|------|
-| 收录项目总数 | 25 |
+| 收录项目总数 | 26 |
 | 覆盖领域分类 | 11 |
 | 覆盖用途分类 | 13 |
 | 最后更新 | 2026-10-19 |
@@ -37,7 +37,7 @@
 | 14 | 2026-09-25 | codegraph | [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | C、Rust、TypeScript | 代码开发工具、AI工程实践、知识库管理 | Token压缩与上下文优化、代码理解与智能检索 | 预索引式代码知识图谱，Rust 内核 + tree-sitter 抽取符号/调用边/依赖边并自动同步变更，本地 SQLite 存储，支持 30+ 语言（含 C++/CUDA），以 MCP 方式服务 Claude Code、Codex、Hermes Agent 等，大库减少 88% 工具调用、62% token。 |
 | 15 | 2026-09-25 | AOCI-CODE | [aoci-spec/aoci-code](https://github.com/aoci-spec/aoci-code) | Go、TypeScript | 代码开发工具、AI工程实践、知识库管理 | Token压缩与上下文优化、代码理解与智能检索、代码库文档生成 | LLM 撰写的 Git 版本化代码库语义索引：每个文件/数据表一条 F职责-R关联-A契约-S隐藏约束 条目，纯文本可 diff 可回滚，本地 Go 单二进制 + 9 工具 MCP，支持 MySQL/PostgreSQL/openGauss 数据库表级索引，索引约 300K token 可覆盖数十万行代码。 |
 | 16 | 2026-10-09 | 2026热门开源UI组件库盘点 | [菜鸟教程/微信公众号](https://mp.weixin.qq.com/s/xoIrdVzFuRr1YxmpBDRLKA) | 技术文章（微信公众号·菜鸟教程） | 前端设计、代码开发工具 | 前端界面生成提质 | 菜鸟教程盘点2026年12个最热门开源UI组件库，核心观点是先选组件库统一设计规则再让AI发挥，附六组选型对照，与本库taste-skill一禁一立互补 |
-| 17 | 2026-10-11 | HyperFrames | [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) | TypeScript、JavaScript | AI大模型、代码开发工具 | 视频生成与剪辑 | HeyGen开源的确定性视频渲染框架，写HTML即渲染视频，为AI Agent而生，配套分镜与生态工具，⭐60.6K |
+| 17 | 2026-10-11 | HyperFrames | [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) | TypeScript、JavaScript | AI大模型、代码开发工具 | 视频生成与剪辑 | HeyGen开源的确定性视频渲染框架，写HTML即渲染视频，为AI Agent而生；自带21个skill含/product-launch-video产品宣传片工作流，⭐67.3K（Apache-2.0，2026-10-19 星数更新） |
 | 18 | 2026-10-11 | video-use | [browser-use/video-use](https://github.com/browser-use/video-use) | Python、HTML | AI大模型、代码开发工具 | 视频生成与剪辑 | browser-use出品的对话式视频剪辑Agent框架，编码Agent直接剪视频，转录剪切字幕调色动画叠加全链路，⭐28.6K |
 | 19 | 2026-10-11 | Remotion Skills | [remotion-dev/skills](https://github.com/remotion-dev/skills) | TypeScript、JavaScript | AI大模型、代码开发工具 | 视频生成与剪辑 | Remotion官方Agent Skills仓，React程序化视频的字幕渲染地图等最佳实践，配主框架使用，⭐5.0K（⚠️未声明开源许可证） |
 | 20 | 2026-10-11 | Generative Media Skills | [calesthio/generative-media-skills](https://github.com/calesthio/generative-media-skills) | Python | AI大模型、代码开发工具 | 视频生成与剪辑 | 研究支撑的多媒体Agent技能集，覆盖图像视频音频语音生成工作流，OpenMontage作者出品，⭐197（近3个月未更新） |
@@ -46,6 +46,7 @@
 | 23 | 2026-10-13 | rea | [morluto/rea](https://github.com/morluto/rea) | TypeScript、JavaScript | AI大模型、代码开发工具 | 代码理解与智能检索 | Agent逆向工程工具箱，MCP+CLI双形态，从应用行为到原生二进制全覆盖，返回带证据的发现，Ghidra/IDA/JADX按需接入，⭐166.3K |
 | 24 | 2026-10-14 | PentAGI | [vxcontrol/pentagi](https://github.com/vxcontrol/pentagi) | Go、TypeScript | AI大模型、代码开发工具 | 自主渗透测试 | 自托管多Agent自主渗透测试系统，自然语言定目标，沙箱调用20+工具执行并出报告，模型层开放可接自建网关，⭐28.2K |
 | 25 | 2026-10-19 | OpenMontage | [calesthio/OpenMontage](https://github.com/calesthio/OpenMontage) | Python、HTML、JavaScript | AI大模型、代码开发工具 | 视频生成与剪辑 | 开源Agentic视频制片系统：12条生产线+100余工具+700余份技能文档，从选题研究到成片自动走完并带质量闸门，⭐70.0K（AGPL-3.0） |
+| 26 | 2026-10-19 | Remotion | [remotion-dev/remotion](https://github.com/remotion-dev/remotion) | TypeScript、PHP、MDX | 代码开发工具、AI大模型 | 视频生成与剪辑 | 用React代码做视频的框架本体：组件即画面、逐帧可寻址，支持Studio预览、批量与Lambda分布式渲染，⭐65.2K（自定义许可：个人与≤3人公司免费商用） |
 
 ---
 
@@ -90,6 +91,10 @@
   - 技术栈：Go、TypeScript
 
 ### 🎬 视频生成与剪辑
+- [Remotion](https://github.com/remotion-dev/remotion)：React代码做视频的框架本体：组件即画面、逐帧可寻址，Studio预览/批量渲染/Lambda分布式三条路线（个人与≤3人公司免费商用）
+  - 收录时间：2026-10-19
+  - 所属领域：代码开发工具、AI大模型
+  - 技术栈：TypeScript、PHP、MDX
 - [OpenMontage](https://github.com/calesthio/OpenMontage)：开源Agentic视频制片系统：12条生产线+100余工具+700余份技能文档，从选题研究到成片自动走完并带质量闸门（AGPL-3.0）
   - 收录时间：2026-10-19
   - 所属领域：AI大模型、代码开发工具
@@ -114,7 +119,7 @@
   - 收录时间：2026-10-11
   - 所属领域：AI大模型、代码开发工具
   - 技术栈：Python、HTML
-- [HyperFrames](https://github.com/heygen-com/hyperframes)：HeyGen开源的确定性视频渲染框架，Agent写HTML即渲染成片
+- [HyperFrames](https://github.com/heygen-com/hyperframes)：HeyGen开源的确定性视频渲染框架，Agent写HTML即渲染成片；自带21个skill含/product-launch-video产品宣传片工作流（Apache-2.0）
   - 收录时间：2026-10-11
   - 所属领域：AI大模型、代码开发工具
   - 技术栈：TypeScript、JavaScript
