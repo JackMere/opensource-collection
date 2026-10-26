@@ -10,10 +10,10 @@
 
 | 指标 | 数量 |
 |------|------|
-| 收录项目总数 | 26 |
+| 收录项目总数 | 27 |
 | 覆盖领域分类 | 11 |
-| 覆盖用途分类 | 13 |
-| 最后更新 | 2026-10-19 |
+| 覆盖用途分类 | 14 |
+| 最后更新 | 2026-10-26 |
 
 ---
 
@@ -47,6 +47,7 @@
 | 24 | 2026-10-14 | PentAGI | [vxcontrol/pentagi](https://github.com/vxcontrol/pentagi) | Go、TypeScript | AI大模型、代码开发工具 | 自主渗透测试 | 自托管多Agent自主渗透测试系统，自然语言定目标，沙箱调用20+工具执行并出报告，模型层开放可接自建网关，⭐28.2K |
 | 25 | 2026-10-19 | OpenMontage | [calesthio/OpenMontage](https://github.com/calesthio/OpenMontage) | Python、HTML、JavaScript | AI大模型、代码开发工具 | 视频生成与剪辑 | 开源Agentic视频制片系统：12条生产线+100余工具+700余份技能文档，从选题研究到成片自动走完并带质量闸门，⭐70.0K（AGPL-3.0） |
 | 26 | 2026-10-19 | Remotion | [remotion-dev/remotion](https://github.com/remotion-dev/remotion) | TypeScript、PHP、MDX | 代码开发工具、AI大模型 | 视频生成与剪辑 | 用React代码做视频的框架本体：组件即画面、逐帧可寻址，支持Studio预览、批量与Lambda分布式渲染，⭐65.2K（自定义许可：个人与≤3人公司免费商用） |
+| 27 | 2026-10-26 | p2wlan | [yhan-sun/p2wlan](https://github.com/yhan-sun/p2wlan) | Rust、Python、Dart、Go | 网络工具 | 异地组网与远程访问 | 跨平台P2P虚拟局域网，异地设备像在同一局域网互联；NAT穿透/IPv6直连/房间组网/加密中继，⭐2963，MIT |
 
 ---
 
@@ -79,10 +80,17 @@
 - #代码理解与智能检索
 - #视频生成与剪辑
 - #自主渗透测试
+- #异地组网与远程访问
 
 ## 🔧 按用途分类
 
 > 按使用场景检索；完整分析见 [docs/](docs/)
+
+### 🌐 异地组网与远程访问
+- [p2wlan](https://github.com/yhan-sun/p2wlan)：跨平台P2P虚拟局域网，异地设备像在同一局域网互联
+  - 收录时间：2026-10-26
+  - 所属领域：网络工具
+  - 技术栈：Rust、Python、Dart、Go
 
 ### 🛡️ 自主渗透测试
 - [PentAGI](https://github.com/vxcontrol/pentagi)：自托管多Agent渗透测试系统，沙箱执行20+工具并沉淀经验
