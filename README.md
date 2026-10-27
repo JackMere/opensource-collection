@@ -10,10 +10,10 @@
 
 | 指标 | 数量 |
 |------|------|
-| 收录项目总数 | 27 |
+| 收录项目总数 | 28 |
 | 覆盖领域分类 | 11 |
 | 覆盖用途分类 | 14 |
-| 最后更新 | 2026-10-26 |
+| 最后更新 | 2026-10-27 |
 
 ---
 
@@ -48,6 +48,7 @@
 | 25 | 2026-10-19 | OpenMontage | [calesthio/OpenMontage](https://github.com/calesthio/OpenMontage) | Python、HTML、JavaScript | AI大模型、代码开发工具 | 视频生成与剪辑 | 开源Agentic视频制片系统：12条生产线+100余工具+700余份技能文档，从选题研究到成片自动走完并带质量闸门，⭐70.0K（AGPL-3.0） |
 | 26 | 2026-10-19 | Remotion | [remotion-dev/remotion](https://github.com/remotion-dev/remotion) | TypeScript、PHP、MDX | 代码开发工具、AI大模型 | 视频生成与剪辑 | 用React代码做视频的框架本体：组件即画面、逐帧可寻址，支持Studio预览、批量与Lambda分布式渲染，⭐65.2K（自定义许可：个人与≤3人公司免费商用） |
 | 27 | 2026-10-26 | p2wlan | [yhan-sun/p2wlan](https://github.com/yhan-sun/p2wlan) | Rust、Python、Dart、Go | 网络工具 | 异地组网与远程访问 | 跨平台P2P虚拟局域网，异地设备像在同一局域网互联；NAT穿透/IPv6直连/房间组网/加密中继，⭐2963，MIT |
+| 28 | 2026-10-27 | huashu-design | [alchaincyf/huashu-design](https://github.com/alchaincyf/huashu-design) | HTML、JavaScript、Python | 前端设计 | 前端界面生成提质 | Agent一句话出可交付设计：网页/App原型/可编辑PPTX/动画/信息图；六选三方向，84种带样张风格库，⭐27658，MIT |
 
 ---
 
@@ -158,12 +159,13 @@
 |---|---|---|
 | [Dayflow](https://github.com/JerryZLiu/Dayflow) | 10 秒采帧批压缩交 AI 还原时间线，支持离线 | [docs](docs/Dayflow_2026-09-17.md) |
 
-### 🎨 前端界面生成提质（2）
+### 🎨 前端界面生成提质（3）
 
 | 项目 | 一句话定位 | 详情 |
 |---|---|---|
 | [taste-skill](https://github.com/Leonxlnx/taste-skill) | 三旋钮配置 + 156 条 AI 味禁令 + 机械可验前置检查 | [docs](docs/taste-skill_2026-09-17.md) |
 | [2026热门开源UI组件库盘点](https://mp.weixin.qq.com/s/xoIrdVzFuRr1YxmpBDRLKA) | 与本库No.7 taste-skill互补：taste-skill是反模板化禁令，本文是正向选型指南，先选库再约束，配套解决AI生成界面的审美问题 | [docs](docs/ui-component-libs-2026_2026-10-09.md) |
+| [huashu-design](https://github.com/alchaincyf/huashu-design) | Agent 一句话出可交付的网页/App 原型/PPTX/动画/信息图，六选三方向+84 种带样张风格库。 | [docs](docs/huashu-design_2026-10-27.md) |
 
 ### 🔄 AI研发流程改造（4）
 
