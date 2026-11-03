@@ -10,10 +10,10 @@
 
 | 指标 | 数量 |
 |------|------|
-| 收录项目总数 | 28 |
+| 收录项目总数 | 29 |
 | 覆盖领域分类 | 11 |
 | 覆盖用途分类 | 14 |
-| 最后更新 | 2026-10-27 |
+| 最后更新 | 2026-11-03 |
 
 ---
 
@@ -49,6 +49,7 @@
 | 26 | 2026-10-19 | Remotion | [remotion-dev/remotion](https://github.com/remotion-dev/remotion) | TypeScript、PHP、MDX | 代码开发工具、AI大模型 | 视频生成与剪辑 | 用React代码做视频的框架本体：组件即画面、逐帧可寻址，支持Studio预览、批量与Lambda分布式渲染，⭐65.2K（自定义许可：个人与≤3人公司免费商用） |
 | 27 | 2026-10-26 | p2wlan | [yhan-sun/p2wlan](https://github.com/yhan-sun/p2wlan) | Rust、Python、Dart、Go | 网络工具 | 异地组网与远程访问 | 跨平台P2P虚拟局域网，异地设备像在同一局域网互联；NAT穿透/IPv6直连/房间组网/加密中继，⭐2963，MIT |
 | 28 | 2026-10-27 | huashu-design | [alchaincyf/huashu-design](https://github.com/alchaincyf/huashu-design) | HTML、JavaScript、Python | 前端设计 | 前端界面生成提质 | Agent一句话出可交付设计：网页/App原型/可编辑PPTX/动画/信息图；六选三方向，84种带样张风格库，⭐27658，MIT |
+| 29 | 2026-11-03 | Pele | [obsidianmd/pele](https://github.com/obsidianmd/pele) | TypeScript、JavaScript | 文档生成 | 架构与流程可视化 | Obsidian 官方开源的 Mermaid → SVG 渲染库，同步渲染、零运行时依赖、CSS 变量控制配色，支持 Mermaid 12.1.0 全部图表类型。⭐ 2,718 |
 
 ---
 
@@ -141,11 +142,12 @@
 | [AOCI-CODE](https://github.com/aoci-spec/aoci-code) | F/R/A/S 四段式语义索引，纯文本可回滚 | [docs](docs/AOCI-CODE_2026-09-25.md) |
 | [rea](https://github.com/morluto/rea) | Agent逆向工程工具箱：MCP调用 inspect 目标返回带证据发现，覆盖二进制/APK/Electron/固件/抓包 | [docs](docs/rea_2026-10-13.md) |
 
-### 📐 架构与流程可视化（1）
+### 📐 架构与流程可视化（2）
 
 | 项目 | 一句话定位 | 详情 |
 |---|---|---|
 | [Archify](https://github.com/tt-a1i/archify) | 五类可交互图，类型化 JSON IR + 五类原子校验 | [docs](docs/Archify_2026-09-23.md) |
+| [Pele](https://github.com/obsidianmd/pele) | Mermaid 源码转 SVG，构建期批量出图或浏览器内 mount，随 CSS 变量切主题。 | [docs](docs/pele_2026-11-03.md) |
 
 ### 💬 聊天记录备份与分析（1）
 
