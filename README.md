@@ -10,10 +10,10 @@
 
 | 指标 | 数量 |
 |------|------|
-| 收录项目总数 | 31 |
-| 覆盖领域分类 | 11 |
-| 覆盖用途分类 | 15 |
-| 最后更新 | 2026-11-09 |
+| 收录项目总数 | 32 |
+| 覆盖领域分类 | 12 |
+| 覆盖用途分类 | 16 |
+| 最后更新 | 2026-11-11 |
 
 ---
 
@@ -52,6 +52,7 @@
 | 29 | 2026-11-03 | Pele | [obsidianmd/pele](https://github.com/obsidianmd/pele) | TypeScript、JavaScript | 文档生成 | 架构与流程可视化 | Obsidian 官方开源的 Mermaid → SVG 渲染库，同步渲染、零运行时依赖、CSS 变量控制配色，支持 Mermaid 12.1.0 全部图表类型。⭐ 2,718 |
 | 30 | 2026-11-05 | Archify | [tt-a1i/archify](https://github.com/tt-a1i/archify) | JavaScript（生成单文件 HTML） | 文档生成 | 架构与流程可视化 | 面向 AI Agent 的可视化技能：把一句话、一份方案或整个代码仓库变成可交互的单文件 HTML——架构图、流程图，或带结论与引用的解释页。支持 Claude Code / Codex / Cursor / OpenCode。⭐ 93,451 |
 | 31 | 2026-11-09 | ego-lite | [citrolabs/ego-lite](https://github.com/citrolabs/ego-lite) | JavaScript / TypeScript（Chromium + 原生绑定） | 桌面客户端 | 浏览器自动化 | 为人和 AI Agent 共用设计的 Chromium 浏览器：Agent 在独立 Space 里跑自动化、继承你的登录态而不抢你的标签页；靠结构化快照（role/name/ref）定位控件，坐标点击仅兜底。仅 macOS/Windows。⭐ 22,182 |
+| 32 | 2026-11-11 | dsh-Go | [ccch1mneyyy/dsh-Go](https://github.com/ccch1mneyyy/dsh-Go) | Dart / Flutter、Kotlin、JavaScript | 移动客户端 | 移动端Agent运行与遥控 | DeepSeek Harness 的 Android 客户端：内置 Linux 环境让 dsh 直接在手机本机运行（免 Root 免 Termux），也能一键切到电脑上的 DSH 会话继续用，附带 Deepy 与鲸娘两个桌宠。AGPL-3.0，仅 Android。⭐ 19,516 |
 
 ---
 
@@ -69,6 +70,7 @@
 - #AI工程实践
 - #前端设计
 - #数据提取与分析
+- #移动客户端
 
 ### 用途标签
 - #AI工具资费监控
@@ -86,10 +88,17 @@
 - #自主渗透测试
 - #异地组网与远程访问
 - #浏览器自动化
+- #移动端Agent运行与遥控
 
 ## 🔧 按用途分类
 
 > 按使用场景检索；完整分析见 [docs/](docs/)
+
+### 📱 移动端Agent运行与遥控
+- [dsh-Go](https://github.com/ccch1mneyyy/dsh-Go)：DeepSeek Harness 的 Android 客户端，内置 Linux 环境让 dsh 在手机本机运行，也能遥控电脑上的会话。
+  - 收录时间：2026-11-11
+  - 所属领域：移动客户端
+  - 技术栈：Dart / Flutter、Kotlin、JavaScript
 
 ### 🖱️ 浏览器自动化
 - [ego-lite](https://github.com/citrolabs/ego-lite)：人机共用的 Chromium 浏览器，Agent 在独立 Space 里跑自动化并继承登录态，用结构化快照（role/name/ref）定位控件。
