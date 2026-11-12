@@ -10,10 +10,10 @@
 
 | 指标 | 数量 |
 |------|------|
-| 收录项目总数 | 32 |
+| 收录项目总数 | 33 |
 | 覆盖领域分类 | 12 |
 | 覆盖用途分类 | 16 |
-| 最后更新 | 2026-11-11 |
+| 最后更新 | 2026-11-12 |
 
 ---
 
@@ -53,6 +53,7 @@
 | 30 | 2026-11-05 | Archify | [tt-a1i/archify](https://github.com/tt-a1i/archify) | JavaScript（生成单文件 HTML） | 文档生成 | 架构与流程可视化 | 面向 AI Agent 的可视化技能：把一句话、一份方案或整个代码仓库变成可交互的单文件 HTML——架构图、流程图，或带结论与引用的解释页。支持 Claude Code / Codex / Cursor / OpenCode。⭐ 93,451 |
 | 31 | 2026-11-09 | ego-lite | [citrolabs/ego-lite](https://github.com/citrolabs/ego-lite) | JavaScript / TypeScript（Chromium + 原生绑定） | 桌面客户端 | 浏览器自动化 | 为人和 AI Agent 共用设计的 Chromium 浏览器：Agent 在独立 Space 里跑自动化、继承你的登录态而不抢你的标签页；靠结构化快照（role/name/ref）定位控件，坐标点击仅兜底。仅 macOS/Windows。⭐ 22,182 |
 | 32 | 2026-11-11 | dsh-Go | [ccch1mneyyy/dsh-Go](https://github.com/ccch1mneyyy/dsh-Go) | Dart / Flutter、Kotlin、JavaScript | 移动客户端 | 移动端Agent运行与遥控 | DeepSeek Harness 的 Android 客户端：内置 Linux 环境让 dsh 直接在手机本机运行（免 Root 免 Termux），也能一键切到电脑上的 DSH 会话继续用，附带 Deepy 与鲸娘两个桌宠。AGPL-3.0，仅 Android。⭐ 19,516 |
+| 33 | 2026-11-12 | public-apis | [public-apis/public-apis](https://github.com/public-apis/public-apis) | Python（校验脚本）+ Markdown | 代码开发工具 | 技术资源导航 | GitHub 最大的免费公共 API 清单：52 个分类、2,415 条记录，每条标出认证方式（apiKey/OAuth/No）与 HTTPS/CORS 支持，10 年持续维护。注意含约三分之一失效或转收费的条目。⭐ 498,251 |
 
 ---
 
@@ -224,11 +225,12 @@
 |---|---|---|
 | [token-monitor](https://github.com/Javis603/token-monitor) | 20+ AI 工具的实时 Token/成本/限额监控 | [docs](docs/token-monitor_2026-07-18.md) |
 
-### 📚 技术资源导航（1）
+### 📚 技术资源导航（2）
 
 | 项目 | 一句话定位 | 详情 |
 |---|---|---|
 | [VPSKnow](https://vpsknow.com/) | 全球云服务器评测、运维教程与网络工具导航 | [docs](docs/vpsknow_2026-07-18.md) |
+| [public-apis](https://github.com/public-apis/public-apis) | 找现成免费数据源与测试数据；按认证方式和 CORS 标记快速判断集成成本。 | [docs](docs/public-apis_2026-11-12.md) |
 
 ---
 
