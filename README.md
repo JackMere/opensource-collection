@@ -10,7 +10,7 @@
 
 | 指标 | 数量 |
 |------|------|
-| 收录项目总数 | 33 |
+| 收录项目总数 | 35 |
 | 覆盖领域分类 | 12 |
 | 覆盖用途分类 | 16 |
 | 最后更新 | 2026-11-12 |
@@ -54,6 +54,8 @@
 | 31 | 2026-11-09 | ego-lite | [citrolabs/ego-lite](https://github.com/citrolabs/ego-lite) | JavaScript / TypeScript（Chromium + 原生绑定） | 桌面客户端 | 浏览器自动化 | 为人和 AI Agent 共用设计的 Chromium 浏览器：Agent 在独立 Space 里跑自动化、继承你的登录态而不抢你的标签页；靠结构化快照（role/name/ref）定位控件，坐标点击仅兜底。仅 macOS/Windows。⭐ 22,182 |
 | 32 | 2026-11-11 | dsh-Go | [ccch1mneyyy/dsh-Go](https://github.com/ccch1mneyyy/dsh-Go) | Dart / Flutter、Kotlin、JavaScript | 移动客户端 | 移动端Agent运行与遥控 | DeepSeek Harness 的 Android 客户端：内置 Linux 环境让 dsh 直接在手机本机运行（免 Root 免 Termux），也能一键切到电脑上的 DSH 会话继续用，附带 Deepy 与鲸娘两个桌宠。AGPL-3.0，仅 Android。⭐ 19,516 |
 | 33 | 2026-11-12 | public-apis | [public-apis/public-apis](https://github.com/public-apis/public-apis) | Python（校验脚本）+ Markdown | 代码开发工具 | 技术资源导航 | GitHub 最大的免费公共 API 清单：52 个分类、2,415 条记录，每条标出认证方式（apiKey/OAuth/No）与 HTTPS/CORS 支持，10 年持续维护。注意含约三分之一失效或转收费的条目。⭐ 498,251 |
+| 34 | 2026-11-12 | awesome-free-llm-apis | [mnfst/awesome-free-llm-apis](https://github.com/mnfst/awesome-free-llm-apis) | JavaScript（整理脚本）+ Markdown | AI大模型 | 技术资源导航 | 只收「永久免费层」的 LLM API 清单：Provider APIs + Inference providers 两大类，117 行表格逐模型给上下文、最大输出、模态与 RPM/TPD 限流，每个条目直达 API Key 申请页。CC0 授权。⭐ 12,932 |
+| 35 | 2026-11-12 | awesome-free-llm-api | [peter123023/awesome-free-llm-api](https://github.com/peter123023/awesome-free-llm-api) | Markdown（中文文档） | AI大模型 | 技术资源导航 | 中文的免费大模型 API 导航：按「模型 → 哪里有免费额度」反查（DeepSeek/GLM/Qwen/海外），并把官方免费层、聚合网关、限时免费、小型网关（标注谨慎）分开列，还会写清「额度不可提现」「key 6 个月有效期」这类坑。⭐ 221 |
 
 ---
 
@@ -225,12 +227,14 @@
 |---|---|---|
 | [token-monitor](https://github.com/Javis603/token-monitor) | 20+ AI 工具的实时 Token/成本/限额监控 | [docs](docs/token-monitor_2026-07-18.md) |
 
-### 📚 技术资源导航（2）
+### 📚 技术资源导航（4）
 
 | 项目 | 一句话定位 | 详情 |
 |---|---|---|
 | [VPSKnow](https://vpsknow.com/) | 全球云服务器评测、运维教程与网络工具导航 | [docs](docs/vpsknow_2026-07-18.md) |
 | [public-apis](https://github.com/public-apis/public-apis) | 找现成免费数据源与测试数据；按认证方式和 CORS 标记快速判断集成成本。 | [docs](docs/public-apis_2026-11-12.md) |
+| [awesome-free-llm-apis](https://github.com/mnfst/awesome-free-llm-apis) | 给网关加免费渠道前做选型：按限流与上下文对比，直达 key 申请页。 | [docs](docs/awesome-free-llm-apis_2026-11-12.md) |
+| [awesome-free-llm-api](https://github.com/peter123023/awesome-free-llm-api) | 国内环境找免费额度、按模型反查渠道，并避开随时关停的小型中转站。 | [docs](docs/awesome-free-llm-api_2026-11-12.md) |
 
 ---
 
