@@ -56,7 +56,7 @@
 | 33 | 2026-11-12 | public-apis | [public-apis/public-apis](https://github.com/public-apis/public-apis) | Python（校验脚本）+ Markdown | 代码开发工具 | 技术资源导航 | GitHub 最大的免费公共 API 清单：52 个分类、2,415 条记录，每条标出认证方式（apiKey/OAuth/No）与 HTTPS/CORS 支持，10 年持续维护。注意含约三分之一失效或转收费的条目。⭐ 498,251 |
 | 34 | 2026-11-12 | awesome-free-llm-apis | [mnfst/awesome-free-llm-apis](https://github.com/mnfst/awesome-free-llm-apis) | JavaScript（整理脚本）+ Markdown | AI大模型 | 技术资源导航 | 只收「永久免费层」的 LLM API 清单：Provider APIs + Inference providers 两大类，117 行表格逐模型给上下文、最大输出、模态与 RPM/TPD 限流，每个条目直达 API Key 申请页。CC0 授权。⭐ 12,932 |
 | 35 | 2026-11-12 | awesome-free-llm-api | [peter123023/awesome-free-llm-api](https://github.com/peter123023/awesome-free-llm-api) | Markdown（中文文档） | AI大模型 | 技术资源导航 | 中文的免费大模型 API 导航：按「模型 → 哪里有免费额度」反查（DeepSeek/GLM/Qwen/海外），并把官方免费层、聚合网关、限时免费、小型网关（标注谨慎）分开列，还会写清「额度不可提现」「key 6 个月有效期」这类坑。⭐ 221 |
-| 36 | 2026-11-17 | Next Terminal | [next-terminal/next-terminal](https://github.com/next-terminal/next-terminal) | Go、TypeScript、React | 运维监控 | 堡垒机与远程运维审计 | ⭐5680 · Apache-2.0 开源的 HTML5 堡垒机与会话审计系统，浏览器里直连 RDP/SSH/VNC/Telnet/HTTP，全程录像回放，适合信创内网做统一运维入口 |
+| 36 | 2026-11-17 | Next Terminal | [next-terminal/next-terminal](https://github.com/next-terminal/next-terminal) | TypeScript/React（前端开源）+ Go（后端 v2.0 起闭源） | 运维监控 | 堡垒机与远程运维审计 | ⭐5680 · HTML5 堡垒机与会话审计，浏览器直连 RDP/SSH/VNC/Telnet/HTTP 并全程录像；⚠️ 仓库自 v2.0.0 起仅前端开源，Go 后端需用官方发行版 |
 
 ---
 
@@ -100,7 +100,7 @@
 > 按使用场景检索；完整分析见 [docs/](docs/)
 
 ### 🔐 堡垒机与远程运维审计
-- [Next Terminal](https://github.com/next-terminal/next-terminal)：⭐5680 · Apache-2.0 的 HTML5 堡垒机，浏览器直连 RDP/SSH/VNC/Telnet/HTTP，会话全程录像可回放审计；Go+React 单文件部署，是自建运维入口里门槛最低的开源方案
+- [Next Terminal](https://github.com/next-terminal/next-terminal)：⭐5680 · HTML5 堡垒机，浏览器直连 RDP/SSH/VNC/Telnet/HTTP，会话全程录像可回放审计；⚠️ 后端自 v2.0.0 起闭源，仅前端 Apache-2.0，无法自行改造元数据库
   - 收录时间：2026-11-17
   - 所属领域：运维监控
   - 技术栈：Go、TypeScript、React
